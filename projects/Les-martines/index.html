@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les Martines — UX/UI Case Study</title>
+  <!-- css style -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="root">
+    <!-- Navigation -->
+    <header class="navbar">
+      <nav class="nav-container">
+        <a href="../../landing/index.html" class="nav-logo" aria-label="Georgina Cierra — Home">
+          <img src="../../assets/img/logo-georgina.webp" alt="Logo icon and name Georgina Cierra" />
+        </a>
+        <div class="nav-links">
+          <a href="../../landing/index.html" class="nav-link active" data-path="/">Mes projets</a>
+          <a href="" class="nav-link" data-path="/about">À propos</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="case-study-wrapper">
+        <!-- Desktop Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-top">
+            <a href="../../landing/index.html" class="sidebar-back">
+              <span class="sidebar-back-arrow">←</span>
+              <span class="sidebar-back-text">Retourner au jardin</span>
+            </a>
+            <h2 class="sidebar-title">
+              Les Martines
+            </h2>
+          </div>
+
+       <!-- Sidebar Navigation -->
+          <nav class="sidebar-nav" aria-label="Case study sections">
+            <a href="#context" class="sidebar-nav-item" data-section="context">
+              <span class="sidebar-nav-num">01</span>
+              <span class="sidebar-nav-label">Contexte</span>
+            </a>
+            <a href="#problem-goals" class="sidebar-nav-item" data-section="problem-goals">
+              <span class="sidebar-nav-num">02</span>
+              <span class="sidebar-nav-label">Problématique et objectifs</span>
+            </a>
+            <a href="#process" class="sidebar-nav-item" data-section="process">
+              <span class="sidebar-nav-num">03</span>
+              <span class="sidebar-nav-label">Processus</span>
+            </a>
+            <a href="#solution" class="sidebar-nav-item" data-section="solution">
+              <span class="sidebar-nav-num">04</span>
+              <span class="sidebar-nav-label">Solution</span>
+            </a>
+            <a href="#results" class="sidebar-nav-item" data-section="results">
+              <span class="sidebar-nav-num">05</span>
+              <span class="sidebar-nav-label">Résultats</span>
+            </a>
+            <a href="#skills" class="sidebar-nav-item" data-section="skills">
+              <span class="sidebar-nav-num">06</span>
+              <span class="sidebar-nav-label">Compétences</span>
+            </a>
+          </nav>
+
+          <!-- Sidebar Footer -->
+          <div class="sidebar-footer">
+            <p class="sidebar-footer-text">
+              Chaque projet · <br> une fleur dans le jardin
+            </p>
+          </div>
+        </aside>
+
+        <!-- Mobile Top Bar -->
+        <div class="mobile-topbar">
+          <a href="#top" class="mobile-topbar-title">
+            Les <span class="mobile-topbar-accent">Martines</span><span class="mobile-topbar-dot">.</span>
+          </a>
+          <nav class="mobile-topbar-nav">
+            <a href="#context" class="mobile-nav-item" data-section="context">01 · Contexte</a>
+            <a href="#problem-goals" class="mobile-nav-item" data-section="problem-goals">02 · Problématique et
+              Objectifs</a>
+            <a href="#process" class="mobile-nav-item" data-section="process">03 · Processus</a>
+            <a href="#solution" class="mobile-nav-item" data-section="solution">04 · Solution</a>
+            <a href="#results" class="mobile-nav-item" data-section="results">05 · Résultats</a>
+            <a href="#skills" class="mobile-nav-item" data-section="skills">06 · Compétences</a>
+          </nav>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content-area">
+          <!-- Hero Header -->
+          <header id="top" class="case-study-hero">
+            <p class="hero-eyebrow">
+              Étude de cas - 2025-2026 - Design UX/UI
+            </p>
+            <h1 class="hero-title">
+              Les <span class="hero-accent">Martines</span>
+            </h1>
+            <p class="hero-description">
+              Refonte du site vitrine d'une application dédiée aux femmes — un espace sûr et solidaire, raconté avec clarté, profondeur et identité.
+            </p>
+            <ul class="hero-tags">
+              <li class="hero-tag">UI /UX</li>
+              <li class="hero-tag">Design</li>
+              <li class="hero-tag">Wordpress</li>
+              <li class="hero-tag">Elementor Pro</li>
+            </ul>
+
+            <a href="https://www.lesmartines.app/"
+              class="solution-cta" target="_blank" rel="noopener noreferrer">
+              Visiter le site
+              <span class="cta-arrow">→</span>
+            </a>
+          </header>
+
+          <!-- Hero Image Placeholder -->
+          <div class="hero-image-section">
+            <figure class="image-placeholder botanical-surface">
+              <div class="placeholder-content">
+                <img src="../../assets/img/les-martines-photo01.webp"
+                  alt="Aperçu des sections du site Les Martines — thématiques, hero, avis et formulaire de contact"
+                  style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+              </div>
+            </figure>
+          </div>
+
+          <!-- 01 — Context -->
+          <section id="context" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">01</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Context</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Une application pour les femmes
+            </h2>
+
+            <div class="context-grid">
+              <p class="context-main">
+                Les Martines est une application dédiée aux femmes, offrant un espace sûr et solidaire pour échanger sur divers sujets. Lancée en 2023, elle évolue avec de nouvelles fonctionnalités et une communauté grandissante. Une refonte du site vitrine a été engagée pour mieux refléter son univers et centraliser ses informations.
+              </p>
+              <aside class="context-sidebar">
+                <div class="context-item">
+                  <p class="context-label">Rôle</p>
+                  <p class="context-value">Webdesigner</p>
+                </div>
+                <div class="context-item">
+                  <p class="context-label">Équipe</p>
+                  <p class="context-value">
+                    1 webdesigner · 1 développeur · 1 product owner
+                  </p>
+                </div>
+                <div class="context-item">
+                  <p class="context-label">Durée</p>
+                  <p class="context-value">3 mois</p>
+                </div>
+                <div class="context-item">
+                  <p class="context-label">Outils</p>
+                  <p class="context-value">Figma · WordPress Elementor Pro</p>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          <!-- 02 — Problem & Goals -->
+          <section id="problem-goals" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">02</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Problématique & objectifs</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Le point de départ
+            </h2>
+
+            <div class="problem-goals-grid">
+              <!-- Problems -->
+              <article class="problem-card">
+                <p class="problem-header">Problèmes</p>
+                <ul class="problem-list">
+                  <li>
+                    L'interface initiale (V1) présentait un déficit de hiérarchie visuelle et de profondeur, ne parvenant pas à valoriser la richesse fonctionnelle de l'application. Ce manque de structure nuisait à l'engagement des utilisatrices.
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Goals -->
+              <article class="goals-card">
+                <p class="goals-header">Objectifs</p>
+                <ul class="goals-list">
+                  <li>
+                    Conversion : CTA stratégiques pour maximiser les téléchargements.
+                  </li>
+                  <li>
+                    Storytelling & identité : valoriser l'ADN et les valeurs de la communauté.
+                  </li>
+                  <li>
+                    Visibilité & crédibilité : exposer clairement fonctionnalités et partenaires.
+                  </li>
+                  <li>
+                    Cohérence omnicanale entre l'application mobile et le site web.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <!-- 03 — Process -->
+          <section id="process" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">03</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Process</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Quatre étapes pour concevoir une expérience fluide et intuitive.
+            </h2>
+
+            <div class="process-grid">
+              <article class="process-card">
+                <p class="modal-step-number">01</p>
+                <h3 class="process-title">Audit & Benchmark</h3>
+                <p class="process-desc">
+                  Audit du site V1 et analyse concurrentielle : identification des points de friction et des opportunités d'amélioration.
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-1">Voir le processus
+                  ↗</button>
+              </article>
+
+              <article class="process-card">
+                <p class="modal-step-number">02</p>
+                <h3 class="process-title">Cadrage du projet</h3>
+                <p class="process-desc">
+                  Priorisation des fonctionnalités et structuration du contenu.
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-2">Voir le processus
+                  ↗</button>
+              </article>
+
+              <article class="process-card">
+                <p class="modal-step-number">03</p>
+                <h3 class="process-title">Créations visuelles et tendances UI</h3>
+                <p class="process-desc">
+                  Exploration du glassmorphism et utilisation d'éléments flottants pour créer une interface moderne, fluide et cohérente avec l'univers graphique du projet.
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-3">Voir le processus
+                  ↗</button>
+              </article>
+
+              <article class="process-card">
+                <p class="modal-step-number">04</p>
+                <h3 class="process-title">Intégration avec microanimations</h3>
+                <p class="process-desc">
+                  Intégration WordPress avec Elementor Pro, créations des microanimations.
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-4">Voir le processus
+                  ↗</button>
+              </article>
+            </div>
+          </section>
+
+          <!-- 04 — Solution -->
+          <section id="solution" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">04</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Solution</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Une refonte stratégique et mémorable.
+            </h2>
+
+            <div class="solution-content">
+              <p class="solution-intro">
+                La refonte s'articule autour de trois piliers : Conversion avec des CTA stratégiques pour maximiser les téléchargements, Storytelling & identité pour valoriser l'ADN et les valeurs de la communauté, et Visibilité & crédibilité grâce à une navigation intuitive exposant clairement les fonctionnalités et le réseau partenaires.
+              </p>
+
+              <!-- Image 1 -->
+              <div class="solution-image reveal">
+                <figure class="image-placeholder botanical-surface">
+                  <div class="placeholder-content">
+                    <img src="../../assets/img/les-martines-photo02.webp"
+                      alt="Statistiques communauté et mockup desktop du site Les Martines"
+                      style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+                  </div>
+                </figure>
+              </div>
+
+              <!-- Image 2 -->
+              <div class="solution-image reveal">
+                <figure class="image-placeholder botanical-surface">
+                  <div class="placeholder-content">
+                    <img src="../../assets/img/les-martines-photo03.webp"
+                      alt="Mockup mobile des catégories de l'app et section &quot;Nos green flags&quot; sur desktop"
+                      style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+                  </div>
+                </figure>
+              </div>
+
+              <a href="https://www.lesmartines.app/"
+                class="solution-cta" target="_blank" rel="noopener noreferrer">
+                Voir le site
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- 05 — Results -->
+          <section id="results" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">05</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Results</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Des résultats qui fleurissent
+            </h2>
+
+            <div class="results-content">
+              <!-- Results List -->
+              <ul class="results-list">
+                <li class="result-item">
+                  <span class="result-metric">Omnicanal</span>
+                  <span class="result-label">cohérence visuelle totale entre l'app mobile et le site web</span>
+                </li>
+                <li class="result-item">
+                  <span class="result-metric">V2</span>
+                  <span class="result-label">passage d'un site confus à une plateforme structurée</span>
+                </li>
+                <li class="result-item">
+                  <span class="result-metric">Réseau</span>
+                  <span class="result-label">partenaires mis en avant, ouvrant de futures collaborations</span>
+                </li>
+              </ul>
+
+              <!-- Image 3 -->
+              <div class="solution-image reveal">
+                <figure class="image-placeholder botanical-surface">
+                  <div class="placeholder-content">
+                    <img src="../../assets/img/les-martines-photo04.webp"
+                      alt="Mockups mobiles des écrans Martine Mag, CTA de téléchargement et FAQ"
+                      style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+                  </div>
+                </figure>
+              </div>
+          </section>
+
+          <!-- 06 — Skills -->
+          <section id="skills" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">06</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Skills</span>
+              </p>
+            </div>
+            <h2 class="section-title">Compétences UX/UI :</h2>
+
+            <ul class="skills-list">
+              <li class="skill-badge">Benchmark concurrentiel</li>
+              <li class="skill-badge">Refonte hiérarchie visuelle</li>
+              <li class="skill-badge">UI moderne (glassmorphism, micro-animations)</li>
+              <li class="skill-badge">Responsive design</li>
+              <li class="skill-badge">Optimisation conversion (CTA, QR code)</li>
+              <li class="skill-badge">Intégration WordPress Elementor Pro</li>
+            </ul>
+          </section>
+
+          <!-- CTA Footer -->
+          <section class="cta-section">
+            <div class="cta-divider">
+              <span class="divider-line"></span>
+              <svg class="botanical-sprig" width="56" height="20" viewBox="0 0 56 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10 H54" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" />
+                <path d="M18 10 C 16 6, 13 5, 10 6 C 12 8, 15 9, 18 10 Z" fill="currentColor" opacity="0.6" />
+                <path d="M22 10 C 20 14, 17 15, 14 14 C 16 12, 19 11, 22 10 Z" fill="currentColor" opacity="0.45" />
+                <path d="M38 10 C 40 6, 43 5, 46 6 C 44 8, 41 9, 38 10 Z" fill="currentColor" opacity="0.6" />
+                <path d="M34 10 C 36 14, 39 15, 42 14 C 40 12, 37 11, 34 10 Z" fill="currentColor" opacity="0.45" />
+              </svg>
+              <span class="divider-line"></span>
+            </div>
+
+            <p class="cta-eyebrow">Exploration</p>
+
+            <div class="cta-links">
+              <a href="/" class="cta-link-back">
+                <span class="cta-arrow">←</span>
+                <span>Jardin des fleurs</span>
+              </a>
+              <span class="cta-separator"></span>
+              <a href="#" class="cta-link-next">
+                <span>Projet suivant</span>
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Process Modals -->
+  <!-- Step 01 Modal -->
+  <div id="process-modal-1" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <div class="modal-step-header">
+          <!-- <span class="modal-step-number">01</span> -->
+          <span class=" modal-step-number">01</span>
+          <h3 class="modal-step-title">Audit de l'Identité de Marque et recherche</h3>
+        </div>
+        <div class="modal-section">
+          <h4 class="modal-section-title">Diagnostic du site V1</h4>
+          <div class="modal-image-wrapper">
+             <img src="../../assets/img/les-martines/les-martines-pop-in-01-A.webp" alt="Diagnostic V1" class="modal-image" />
+          </div>
+          <div class="modal-text-content">
+             <p><strong>Points d'amélioration :</strong></p>
+             <ol>
+               <li>Navigation &amp; Accessibilité : Harmonisation du menu et ajout d’un QR Code pour lier le desktop au mobile.</li>
+               <li>Dynamisme UI : Remplacement des visuels statiques par des composants interactifs (scroll, carrousel) pour présenter l'app.</li>
+               <li>Preuve Sociale : Intégration de chiffres clés (300k likes) et des logos partenaires pour renforcer la crédibilité.</li>
+               <li>Conversion (CRO) : Refonte des CTA et du formulaire de contact pour maximiser les leads et téléchargements.</li>
+             </ol>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h4 class="modal-section-title">Adaptation de l'Identité (Brand UI)</h4>
+          <div class="modal-callout">
+             <p>Le site a été conçu en respectant l’identité visuelle et l’univers graphique déjà établis de la marque.</p>
+          </div>
+          <div class="modal-image-wrapper">
+             <img src="../../assets/img/les-martines/les-martines-pop-in01-B.webp" alt="Charte Graphique" class="modal-image" />
+          </div>
+        </div>
+        <div class="modal-section">
+          <h4 class="modal-section-title">Concurrence</h4>
+          <div class="concurrence-grid">
+             <div class="concurrence-item">
+               <img src="../../assets/img/les-martines/les-martines-pop-in01-C.webp" alt="The Sorority" class="concurrence-logo" />
+               <p>The Sorority est une plateforme communautaire sécurisée dédiée à la protection et à l'entraide entre femmes.</p>
+             </div>
+             <div class="concurrence-item">
+               <img src="../../assets/img/les-martines/les-martines-pop-in01-D.webp" alt="Meetup" class="concurrence-logo" />
+               <p>Meetup est une plateforme sociale conçue pour organiser et rejoindre des groupes locaux centrés sur des intérêts communs.</p>
+             </div>
+             <div class="concurrence-item">
+               <img src="../../assets/img/les-martines/les-martines-pop-in01-E.webp" alt="Facebook, Instagram" class="concurrence-logo" />
+               <p>Groupes privés sur Facebook, Instagram</p>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+<!-- End Step 01 Modal -->
+
+
+<!-- Step 02 Modal -->
+  <div id="process-modal-2" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <div class="modal-step-header">
+          <span class="modal-step-number">02</span>
+          <h3 class="modal-step-title">Cadrage du projet</h3>
+        </div>
+        <div class="modal-section">
+          <p>Conception de l'arborescence pour structurer la homepage et hiérarchiser les fonctionnalités clés. Échanges stratégiques avec la CEO pour répondre à trois objectifs : booster les téléchargements, transformer le site en vitrine de marque et fédérer la communauté des Martines.</p>
+          <div class="modal-image-wrapper">
+             <img src="../../assets/img/les-martines/les-martines-pop-in02.webp" alt="Cadrage du projet" class="modal-image" />
+          </div>
+        </div>
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+  <!-- End Step 02 Modal -->
+
+  <!-- Step 03 Modal -->
+  <div id="process-modal-3" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <!-- Main Step Header -->
+        <div class="modal-step-header">
+          <span class="modal-step-number">03</span>
+          <h3 class="modal-step-title">Créations visuelles et tendances UI</h3>
+        </div>
+
+        <!-- Alliance Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title-small mobile-only">Alliance du Glassmorphisme et de l'effet Pop-out</h4>
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+              <p class="modal-text-desc">Mockups au style plus épuré : glassmorphism, éléments flottants qui sortent de l'écran du téléphone pour mettre en avant les fonctionnalités disponibles dans l'interface.</p>
+            </div>
+            <div class="modal-col-title">
+              <h4 class="modal-section-title-small">Alliance du Glassmorphisme et de l'effet Pop-out</h4>
+            </div>
+          </div>
+          <div class="modal-image-wrapper">
+             <img src="../../assets/img/les-martines/les-martines-pop-in-03-A.webp" alt="Alliance Glassmorphism et Pop-out" class="modal-image" />
+          </div>
+          <p class="modal-text-desc mobile-only" style="margin-top: 1rem;">Mockups au style plus épuré : glassmorphism, éléments flottants qui sortent de l'écran du téléphone pour mettre en avant les fonctionnalités disponibles dans l'interface.</p>
+        </div>
+
+        <!-- Valeurs Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Section “Nos valeurs”</h4>
+          <p class="modal-text-subtitle">Création d’une section dédiée pour clarifier les valeurs de la marque</p>
+          <div class="modal-image-wrapper no-bg">
+             <img src="../../assets/img/les-martines/les-martines-pop-in-03-B.webp" alt="Section Nos Valeurs" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Chiffres Clés Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title-small mobile-only">Conception d'une section “Chiffres Clés”</h4>
+          <p class="modal-text-desc mobile-only" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">Intégration d'une bannière dynamique mettant en lumière la croissance de l'application et l'engagement croissant de notre communauté.</p>
+          
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+              <p class="modal-text-desc">Intégration d'une bannière dynamique mettant en lumière la croissance de l'application et l'engagement croissant de notre communauté.</p>
+            </div>
+            <div class="modal-col-title">
+              <h4 class="modal-section-title-small">Conception d'une section “Chiffres Clés”</h4>
+            </div>
+          </div>
+          
+          <!-- Stats Box -->
+          <div class="stats-box-wrapper">
+            <div class="stats-box-image">
+               <img src="../../assets/img/les-martines/les-martines-pop-in-03-C.webp" alt="Mockup Commentaires" class="stats-mockup" />
+            </div>
+            <div class="stats-content">
+              <h5 class="stats-title">Une commu ultra engagée</h5>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <span class="stat-value">300k</span>
+                  <span class="stat-label">LIKES</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-value">120k</span>
+                  <span class="stat-label">COMMENTAIRES</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-value">25k</span>
+                  <span class="stat-label">POSTS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">QR</h4>
+          <div class="modal-row align-center">
+            <div class="modal-col-text">
+              <p class="modal-text-desc">Ajout d’un QR code sur la version desktop pour encourager le téléchargement de l’application</p>
+            </div>
+            <div class="modal-col-qr">
+              <img src="../../assets/img/les-martines/les-martines-pop-in-03-D.webp" alt="QR Code" class="qr-image" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Partenaires Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Section “Nos partenaires”</h4>
+          <p class="modal-text-desc text-center">Intégration d’une bannière des partenaires directement sur la page d’accueil<br>Objectif : valoriser les collaborations existantes et encourager de nouveaux partenariats</p>
+          <div class="modal-image-wrapper no-bg">
+             <img src="../../assets/img/les-martines/les-martines-pop-in-03-E.webp" alt="Section Nos Partenaires" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="modal-section">
+          <div class="modal-row">
+            <div class="modal-col-text">
+              <p class="modal-text-desc">Création d’un formulaire de contact afin d’encourager de nouvelles collaborations.</p>
+            </div>
+            <div class="modal-col-title">
+              <h4 class="modal-section-title-small">Formulaire de contact</h4>
+            </div>
+          </div>
+          <div class="modal-image-wrapper rounded shadow">
+             <img src="../../assets/img/les-martines/les-martines-pop-in-03-F.webp" alt="Formulaire de contact" class="modal-image" />
+          </div>
+        </div>
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+   <!-- End Step 03 Modal -->
+
+  <!-- Step 04 Modal -->
+  <div id="process-modal-4" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <!-- Main Step Header -->
+        <div class="modal-step-header">
+          <span class="modal-step-number">04</span>
+          <h3 class="modal-step-title">Intégration avec microanimations</h3>
+        </div>
+
+        <p class="modal-intro-text">
+          L’intégration des animations et micro-interactions a été pensée pour rendre l’expérience utilisateur plus fluide et engageante, en valorisant les contenus clés et les appels à l’action, tout en restant cohérente avec l’univers graphique.
+        </p>
+
+        <!-- Video 01 Section -->
+        <div class="modal-section video-section">
+          <p class="modal-text-desc">Animation de la barre de navigation fixe avec un fond transparent en style glassmorphism.</p>
+          <div class="video-container">
+            <img src="../../assets/img/les-martines/nav-bar.gif" alt="Cartes animées" class="modal-video-gif" />
+          </div>
+        </div>
+
+        <!-- Video 02 Section (GIF) -->
+        <div class="modal-section video-section">
+          <p class="modal-text-desc">Cartes animées avec des éléments flottants pour mettre en avant les fonctionnalités clés de l’appli.</p>
+          <div class="video-container no-aspect">
+            <img src="../../assets/img/les-martines/les-martines.gif" alt="Cartes animées" class="modal-video-gif" />
+          </div>
+        </div>
+
+        <!-- Video 03 Section -->
+        <div class="modal-section video-section">
+          <p class="modal-text-desc">Effets au survol pour mettre en lumière les partenaires de l’app.</p>
+          <div class="video-container">
+            <img src="../../assets/img/les-martines/partenaires.gif" alt="Cartes animées" class="modal-video-gif" />
+          </div>
+        </div>
+
+        <!-- Video 04 Section -->
+        <div class="modal-section video-section">
+          <p class="modal-text-desc">Éléments flottants, micro-interactions et carrousel en boucle ont été utilisés pour dynamiser le site, valoriser les chiffres clés et les commentaires, et renforcer l’engagement autour de l’application.</p>
+          <div class="video-container">
+            <img src="../../assets/img/les-martines/chiffres.gif" alt="Cartes animées" class="modal-video-gif" />
+          </div>
+        </div>
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+   <!-- End Step 04 Modal -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>

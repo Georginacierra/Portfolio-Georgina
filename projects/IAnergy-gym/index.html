@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IAnergy — UX/UI Case Study</title>
+  <!-- css style -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="root">
+    <!-- Navigation -->
+    <header class="navbar">
+      <nav class="nav-container">
+        <a href="../../landing/index.html" class="nav-logo" aria-label="Georgina Cierra — Home">
+          <img src="../../assets/img/logo-georgina.webp" alt="Logo icon and name Georgina Cierra" />
+        </a>
+        <div class="nav-links">
+          <a href="../../landing/index.html" class="nav-link active" data-path="/">Mes projets</a>
+          <a href="" class="nav-link" data-path="/about">À propos</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="case-study-wrapper">
+        <!-- Desktop Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-top">
+            <a href="../../landing/index.html" class="sidebar-back">
+              <span class="sidebar-back-arrow">←</span>
+              <span class="sidebar-back-text">Retourner au jardin</span>
+            </a>
+            <h2 class="sidebar-title">
+              IAnergy gym
+            </h2>
+          </div>
+
+         <!-- Sidebar Navigation -->
+          <nav class="sidebar-nav" aria-label="Case study sections">
+            <a href="#context" class="sidebar-nav-item" data-section="context">
+              <span class="sidebar-nav-num">01</span>
+              <span class="sidebar-nav-label">Contexte</span>
+            </a>
+            <a href="#problem-goals" class="sidebar-nav-item" data-section="problem-goals">
+              <span class="sidebar-nav-num">02</span>
+              <span class="sidebar-nav-label">Problématique et objectifs</span>
+            </a>
+            <a href="#process" class="sidebar-nav-item" data-section="process">
+              <span class="sidebar-nav-num">03</span>
+              <span class="sidebar-nav-label">Processus</span>
+            </a>
+            <a href="#solution" class="sidebar-nav-item" data-section="solution">
+              <span class="sidebar-nav-num">04</span>
+              <span class="sidebar-nav-label">Solution</span>
+            </a>
+            <a href="#results" class="sidebar-nav-item" data-section="results">
+              <span class="sidebar-nav-num">05</span>
+              <span class="sidebar-nav-label">Résultats</span>
+            </a>
+            <a href="#skills" class="sidebar-nav-item" data-section="skills">
+              <span class="sidebar-nav-num">06</span>
+              <span class="sidebar-nav-label">Compétences</span>
+            </a>
+          </nav>
+          
+          <!-- Sidebar Footer -->
+          <div class="sidebar-footer">
+            <p class="sidebar-footer-text">
+              Chaque projet · <br> une fleur dans le jardin
+            </p>
+          </div>
+        </aside>
+
+        <!-- Mobile Top Bar -->
+        <div class="mobile-topbar">
+          <a href="#top" class="mobile-topbar-title">
+            IAnergy gym<span class="mobile-topbar-dot">.</span>
+          </a>
+          <nav class="mobile-topbar-nav">
+            <a href="#context" class="mobile-nav-item" data-section="context">01 · Context</a>
+            <a href="#problem-goals" class="mobile-nav-item" data-section="problem-goals">02 · Problématique et
+              Objectifs</a>
+            <a href="#process" class="mobile-nav-item" data-section="process">03 · Processus</a>
+            <a href="#solution" class="mobile-nav-item" data-section="solution">04 · Solution</a>
+            <a href="#results" class="mobile-nav-item" data-section="results">05 · Résultats</a>
+            <a href="#skills" class="mobile-nav-item" data-section="skills">06 · Compétences</a>
+          </nav>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content-area">
+          <!-- Hero Header -->
+          <header id="top" class="case-study-hero">
+            <p class="hero-eyebrow">
+              Étude de cas - 2026 - Design UX/UI
+            </p>
+            <h1 class="hero-title">
+              IAnergy <span class="hero-accent">gym</span>
+            </h1>
+            <p class="hero-description">
+              IAnergy est une application mobile connectée à une salle de sport futuriste imaginée en 2050. Elle accompagne les utilisateurs souhaitant adopter un mode de vie actif tout en prévenant les blessures, grâce à une analyse biométrique en temps réel réalisée dès l'entrée de la salle.
+            </p>
+            <ul class="hero-tags">
+              <li class="hero-tag">UI /UX</li>
+              <li class="hero-tag">Design</li>
+              <li class="hero-tag">Figma</li>
+              <li class="hero-tag">Prototype</li>
+            </ul>
+
+            <a href="https://www.figma.com/proto/KhkUp9a1bqqweDqfEKEtES/AInergy-2050--Copy-?node-id=651-4551&viewport=-21%2C163%2C0.04&t=xyipatPcayZ2XFA7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=651%3A4551&page-id=35%3A2"
+              class="solution-cta" target="_blank" rel="noopener noreferrer">
+              Voir le prototype
+              <span class="cta-arrow">→</span>
+            </a>
+          </header>
+
+          <!-- Hero Image Placeholder -->
+          <div class="hero-image-section">
+            <figure class="image-placeholder botanical-surface">
+              <div class="placeholder-content">
+                <img src="../../assets/img/AInergy-photo01.webp"
+                  alt="Aperçu des sections du prototype IAnergy — thématiques, hero, avis et formulaire de contact"
+                  style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+              </div>
+            </figure>
+          </div>
+
+          <!-- 01 — Context -->
+          <section id="context" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">01</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Context</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Une salle de sport futuriste, conçue pour l'humain de 2050.
+            </h2>
+
+            <div class="context-grid">
+              <p class="context-main">
+                IAnergy est une application mobile connectée à une salle de sport futuriste imaginée en 2050. Elle accompagne les utilisateurs souhaitant adopter un mode de vie actif tout en prévenant les blessures, grâce à une analyse biométrique en temps réel réalisée dès l'entrée de la salle.
+              </p>
+              <aside class="context-sidebar">
+                <div class="context-item">
+                  <p class="context-label">Rôle</p>
+                  <p class="context-value">UI/UX Designer & Webdesigner</p>
+                </div>
+                <div class="context-item">
+                  <p class="context-label">Équipe</p>
+                  <p class="context-value">projet solo</p>
+                </div>
+                <div class="context-item">
+                  <p class="context-label">Durée</p>
+                  <p class="context-value">2 mois</p>
+                </div>
+                <div class="context-item">
+                  <p class="context-label">Outils</p>
+                  <p class="context-value">Figma · Illustrator</p>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          <!-- 02 — Problem & Goals -->
+          <section id="problem-goals" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">02</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Problématique & objectifs</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Le point de départ
+            </h2>
+
+            <div class="problem-goals-grid">
+              <!-- Problems -->
+              <article class="problem-card">
+                <p class="problem-header">Problèmes</p>
+                <ul class="problem-list">
+                  <li>Comment proposer une expérience sportive ultra-personnalisée dans un environnement futuriste ?</li>
+                  <li>Comment traduire des données biométriques complexes en une interface intuitive et désirable ?</li>
+                </ul>
+              </article>
+
+              <!-- Goals -->
+              <article class="goals-card">
+                <p class="goals-header">Objectifs</p>
+                <ul class="goals-list">
+                  <li>Personnalisation : synchroniser les routines d'entraînement sur le profil biométrique de chaque utilisateur.</li>
+                  <li>Priorisation des fonctionnalités V1 grâce à la méthode MoSCoW, création du sitemap pour organiser l'architecture de l'information, puis conception des wireframes et des premières fondations de l'identité visuelle.</li>
+                  <li>Prévenir les blessures sans surcharger cognitivement l'utilisateur.</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <!-- 03 — Process -->
+          <section id="process" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">03</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Process</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Quatre étapes pour concevoir une expérience fluide et intuitive.
+            </h2>
+
+            <div class="process-grid">
+              <article class="process-card">
+                <p class="modal-step-number">01</p>
+                <h3 class="process-title">Recherche & stratégie UX</h3>
+                <p class="process-desc">
+                  Design Thinking pour l'idéation d'un concept futuriste, analyse concurrentielle des user journeys d'applications sport, définition des personas.
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-1">Voir le processus ↗</button>
+              </article>
+
+              <article class="process-card">
+                <p class="modal-step-number">02</p>
+                <h3 class="process-title">Cadrage du projet</h3>
+                <p class="process-desc">
+                  Priorisation des fonctionnalités et structuration du contenue
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-2">Voir le processus ↗</button>
+              </article>
+
+              <article class="process-card">
+                <p class="modal-step-number">03</p>
+                <h3 class="process-title">Conception visuelle & UI</h3>
+                <p class="process-desc">
+                  Création de l'identité visuelle et de la charte graphique IAnergy, wireframes basse fidélité, prototypage haute fidélité avec interactions sur Figma.
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-3">Voir le processus ↗</button>
+              </article>
+
+              <article class="process-card">
+                <p class="modal-step-number">04</p>
+                <h3 class="process-title">Prototypage</h3>
+                <p class="process-desc">
+                  Conception d'un prototype interactif haute fidélité. Une immersion dans le futur du sport
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-4">Voir le processus ↗</button>
+              </article>
+            </div>
+          </section>
+
+          <!-- 04 — Solution -->
+          <section id="solution" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">04</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Solution</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Une expérience sportive pilotée par la donnée en temps réel.
+            </h2>
+
+            <div class="solution-content">
+              <p class="solution-intro">
+                IAnergy s’appuie sur un scanner intelligent connecté à l’application. Situé à l’entrée de la salle, ce dispositif réalise un bilan biométrique instantané afin d’adapter automatiquement les recommandations sportives de l’utilisateur.<br><br>
+                Les données collectées alimentent une interface personnalisée capable de proposer des routines optimisées, pensées pour améliorer la performance tout en réduisant les risques de blessure.
+              </p>
+
+              <!-- Image 1 -->
+              <div class="solution-image reveal">
+                <figure class="image-placeholder botanical-surface">
+                  <div class="placeholder-content">
+                    <img src="../../assets/img/AInergy-photo02.webp"
+                      alt="Statistiques communauté et mockup desktop du prototype IAnergy"
+                      style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+                  </div>
+                </figure>
+              </div>
+
+              <!-- Image 2 -->
+              <div class="solution-image reveal">
+                <figure class="image-placeholder botanical-surface">
+                  <div class="placeholder-content">
+                    <img src="../../assets/img/AInergy-photo03.webp"
+                      alt="Mockup mobile des catégories de l'app IAnergy et section 'Nos green flags' sur desktop"
+                      style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+                  </div>
+                </figure>
+              </div>
+
+              <a href="https://www.figma.com/proto/KhkUp9a1bqqweDqfEKEtES/AInergy-2050--Copy-?node-id=651-4551&viewport=-21%2C163%2C0.04&t=xyipatPcayZ2XFA7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=651%3A4551&page-id=35%3A2"
+                class="solution-cta" target="_blank" rel="noopener noreferrer">
+                Voir le prototype
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- 05 — Results -->
+          <section id="results" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">05</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Results</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Des résultats qui fleurissent
+            </h2>
+
+            <div class="results-content">
+              <!-- Results List -->
+              <ul class="results-list">
+                <li class="result-item">
+                  <span class="result-metric">Omnicanal</span>
+                  <span class="result-label">cohérence visuelle totale entre l'app mobile et le site web</span>
+                </li>
+                <li class="result-item">
+                  <span class="result-metric">V2</span>
+                  <span class="result-label">passage d'un site confus à une plateforme structurée</span>
+                </li>
+                <li class="result-item">
+                  <span class="result-metric">Réseau</span>
+                  <span class="result-label">partenaires mis en avant, ouvrant de futures collaborations</span>
+                </li>
+              </ul>
+
+              <!-- Image 3 -->
+              <div class="solution-image reveal">
+                <figure class="image-placeholder botanical-surface">
+                  <div class="placeholder-content">
+                    <img src="../../assets/img/AInergy-photo04.webp"
+                      alt="Mockups mobiles des écrans IAnergy, CTA de téléchargement et FAQ"
+                      style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+                  </div>
+                </figure>
+              </div>
+          </section>
+
+          <!-- 06 — Skills -->
+          <section id="skills" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">06</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Compétences</span>
+              </p>
+            </div>
+            <h2 class="section-title">Compétences UX/UI :</h2>
+
+            <ul class="skills-list">
+              <li class="skill-badge">Analyse de la demande</li>
+              <li class="skill-badge">Benchmark concurrentiel</li>
+              <li class="skill-badge">Priorisation fonctionnalités</li>
+              <li class="skill-badge">Définition personas</li>
+              <li class="skill-badge">Architecture de l'information</li>
+              <li class="skill-badge">Wireframing</li>
+              <li class="skill-badge">Prototypage haute fidélité</li>
+              <li class="skill-badge">Création identité visuelle & charte graphique</li>
+              <li class="skill-badge">Tests d'utilisabilité & itérations</li>
+            </ul>
+          </section>
+
+          <!-- CTA Footer -->
+          <section class="cta-section">
+            <div class="cta-divider">
+              <span class="divider-line"></span>
+              <svg class="botanical-sprig" width="56" height="20" viewBox="0 0 56 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10 H54" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" />
+                <path d="M18 10 C 16 6, 13 5, 10 6 C 12 8, 15 9, 18 10 Z" fill="currentColor" opacity="0.6" />
+                <path d="M22 10 C 20 14, 17 15, 14 14 C 16 12, 19 11, 22 10 Z" fill="currentColor" opacity="0.45" />
+                <path d="M38 10 C 40 6, 43 5, 46 6 C 44 8, 41 9, 38 10 Z" fill="currentColor" opacity="0.6" />
+                <path d="M34 10 C 36 14, 39 15, 42 14 C 40 12, 37 11, 34 10 Z" fill="currentColor" opacity="0.45" />
+              </svg>
+              <span class="divider-line"></span>
+            </div>
+
+            <p class="cta-eyebrow">Exploration</p>
+
+            <div class="cta-links">
+              <a href="/" class="cta-link-back">
+                <span class="cta-arrow">←</span>
+                <span>Jardin des fleurs</span>
+              </a>
+              <span class="cta-separator"></span>
+              <a href="#" class="cta-link-next">
+                <span>Projet suivant</span>
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Process Modals -->
+  <!-- Step 01 Modal -->
+  <div id="process-modal-1" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <div class="modal-step-header">
+          <span class="modal-step-number">01</span>
+          <h3 class="modal-step-title">Recherche & stratégier UX</h3>
+        </div>
+
+        <!-- Audit Section -->
+        <div class="modal-section">
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+              <div class="modal-callout">
+                <p>L'une de mes premières démarches a été de modéliser le parcours utilisateur sur l'application Basic-Fit. L'objectif était de décomposer chaque étape du flux de travail pour comprendre les mécanismes de base du service et identifier précisément les points de friction (pain points) rencontrés par les membres en situation réelle</p>
+              </div>
+            </div>
+            <div class="modal-col-title">
+              <h4 class="modal-section-title-small">Audit de l'expérience existante</h4>
+            </div>
+          </div>
+          
+          <!-- Mobile Title & Content -->
+          <div class="mobile-only">
+            <h4 class="modal-section-title-small" style="margin-bottom: 1rem;">Audit de l'expérience existante</h4>
+            <div class="modal-callout" style="margin-bottom: 1.5rem;">
+              <p>L'une de mes premières démarches a été de modéliser le parcours utilisateur sur l'application Basic-Fit. L'objectif était de décomposer chaque étape du flux de travail pour comprendre les mécanismes de base du service et identifier précisément les points de friction (pain points) rencontrés par les membres en situation réelle</p>
+            </div>
+          </div>
+
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/AInergy/Popin01-ainergy-A.webp" alt="User Journey user 1 cherchant un entraînement bras sur Basic Fit" class="modal-image" />
+          </div>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/AInergy/Popin01-ainergy-B.webp" alt="User Journey Map user 2 créant une séance personnalisée sur Basic Fit" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Moodboard Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Moodboard</h4>
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+              <div class="modal-image-wrapper">
+                <img src="../../assets/img/AInergy/Popin01-ainergy-C.webp" alt="Moodboard concept AInergyGym : salle de sport futuriste 2050 avec Human Tech et Move" class="modal-image" />
+              </div>
+            </div>
+            <div class="modal-col-title">
+              <div class="modal-callout" style="height: 100%; display: flex; align-items: center;">
+                <p>L'idée centrale du moodboard est de montrer la synergie entre la technologie et l'humain. Un suivi grâce à l'IA pour aider à améliorer la vie humaine, éviter les risques et aider à accomplir des objectifs.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Moodboard -->
+          <div class="mobile-only">
+            <div class="modal-image-wrapper" style="margin-bottom: 1rem;">
+              <img src="../../assets/img/AInergy/Popin01-ainergy-C.webp" alt="Moodboard concept AInergyGym : salle de sport futuriste 2050 avec Human Tech et Move" class="modal-image" />
+            </div>
+            <div class="modal-callout">
+              <p>L'idée centrale du moodboard est de montrer la synergie entre la technologie et l'humain. Un suivi grâce à l'IA pour aider à améliorer la vie humaine, éviter les risques et aider à accomplir des objectifs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brainstorming Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Brain storming</h4>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/AInergy/Popin01-ainergy-D.webp" alt="Brainstorming de l'app SynerGym : fonctionnalités IA, machines connectées et suivi santé" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Personas Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Personas</h4>
+          <div class="modal-personas-list">
+            <div class="modal-image-wrapper">
+              <img src="../../assets/img/AInergy/Popin01-ainergy-E.webp" alt="Persona Camille, 32 ans, cadre pressée cherchant des séances courtes et flexibles" class="modal-image" />
+            </div>
+            <div class="modal-image-wrapper">
+              <img src="../../assets/img/AInergy/Popin01-ainergy-F.webp" alt="Persona Thomas, 45 ans, freelance souhaitant un suivi expert et bienveillant" class="modal-image" />
+            </div>
+            <div class="modal-image-wrapper">
+              <img src="../../assets/img/AInergy/Popin01-ainergy-G.webp" alt="Sophie, 55 ans, retraitée en rééducation cherchant un encadrement sécurisé" class="modal-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 02 Modal -->
+  <div id="process-modal-2" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <div class="modal-step-header">
+          <span class="modal-step-number">02</span>
+          <h3 class="modal-step-title">Cadrage du projet</h3>
+        </div>
+
+        <!-- MoSCoW Section -->
+        <div class="modal-section">
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+              <div class="modal-callout">
+                <p>Utilisation de la méthode MoSCoW pour définir les fonctionnalités prioritaires de l’application et structurer les décisions UX en fonction du délai de production du projet.</p>
+              </div>
+            </div>
+            <div class="modal-col-title">
+              <h4 class="modal-section-title-small">méthode MoSCoW</h4>
+            </div>
+          </div>
+          
+          <!-- Mobile MoSCoW -->
+          <div class="mobile-only">
+            <h4 class="modal-section-title-small" style="margin-bottom: 1rem;">méthode MoSCoW</h4>
+            <div class="modal-callout" style="margin-bottom: 1.5rem;">
+              <p>Utilisation de la méthode MoSCoW pour définir les fonctionnalités prioritaires de l’application et structurer les décisions UX en fonction du délai de production du projet.</p>
+            </div>
+          </div>
+
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/AInergy/Popin02-ainergy-A.webp" alt="Matrice MoSCoW des fonctionnalités AInergyGym : Must have, Should have, Could have, Won't have" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Sitemap Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Sitemap IAnergy</h4>
+          <p class="modal-text-desc" style="margin-bottom: 1.5rem;">Création d’un sitemap pour clarifier la hiérarchie des contenus et construire une navigation intuitive autour des fonctionnalités clés de l’expérience IAnergy.</p>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/AInergy/Popin02-ainergy-B.webp" alt="Architecture de l'app AInergyGym : Hub, Statut, QR Scanner, Session et Dashboard" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Wireframes Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Wireframes <span style="font-size: 24px; font-weight: 500; display: block; margin-top: 0.5rem;">LOW FIDELITY</span></h4>
+          
+          <div class="modal-personas-list" style="margin-top: 1.5rem;">
+            <!-- Wireframe 01 -->
+            <div style="margin-bottom: 1rem;">
+              <p class="modal-text-desc" style="font-weight: 700; margin-bottom: 0.5rem;">Onboarding et Connexion</p>
+              <div class="modal-image-wrapper">
+                <img src="../../assets/img/AInergy/Popin02-ainergy-C.webp" alt="Wireframes du onboarding : présentation app, questionnaire, analyse santé et séance idéale" class="modal-image" />
+              </div>
+            </div>
+
+            <!-- Wireframe 02 -->
+            <div style="margin-bottom: 1rem;">
+              <p class="modal-text-desc" style="font-weight: 700; margin-bottom: 0.5rem;">Objectifs et analyse</p>
+              <div class="modal-image-wrapper">
+                <img src="../../assets/img/AInergy/Popin02-ainergy-D.webp" alt="Wireframes des écrans Objectifs/Progression et Bilan Santé avec rendu final" class="modal-image" />
+              </div>
+            </div>
+
+            <!-- Wireframe 03 -->
+            <div style="margin-bottom: 1rem;">
+              <p class="modal-text-desc" style="font-weight: 700; margin-bottom: 0.5rem;">Home</p>
+              <div class="modal-image-wrapper">
+                <img src="../../assets/img/AInergy/Popin02-ainergy-E.webp" alt="Wireframes de l'écran Home : message IA du jour, graphiques santé et séance du jour" class="modal-image" />
+              </div>
+            </div>
+
+            <!-- Wireframe 04 -->
+            <div>
+              <p class="modal-text-desc" style="font-weight: 700; margin-bottom: 0.5rem;">Séances de sport</p>
+              <div class="modal-image-wrapper">
+                <img src="../../assets/img/AInergy/Popin02-ainergy-F.webp" alt="Wireframes des écrans Sessions de sport avec scan QR Code et déroulé de séance" class="modal-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 03 Modal -->
+  <div id="process-modal-3" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <div class="modal-step-header">
+          <span class="modal-step-number">03</span>
+          <h3 class="modal-step-title">Conception visuelle & UI</h3>
+        </div>
+
+        <!-- Logo Section -->
+        <div class="modal-section">
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+              <div class="modal-callout">
+                <p>Le logo utilise la typographie Orbitron comme base pour souligner son aspect futuriste. Il représente la synergie créée par la séance de sport : une connexion d'énergie entre le rouge (la force humaine) et le bleu (la technologie). Leur fusion donne naissance au violet, symbole de l’énergie pure.</p>
+              </div>
+            </div>
+            <div class="modal-col-title">
+              <h4 class="modal-section-title-small">Identité visuelle</h4>
+            </div>
+          </div>
+          
+          <!-- Mobile Logo Intro -->
+          <div class="mobile-only">
+            <h4 class="modal-section-title-small" style="margin-bottom: 1rem;">Identité visuelle</h4>
+            <div class="modal-callout" style="margin-bottom: 1.5rem;">
+              <p>Le logo utilise la typographie Orbitron comme base pour souligner son aspect futuriste. Il représente la synergie créée par la séance de sport : une connexion d'énergie entre le rouge (la force humaine) et le bleu (la technologie). Leur fusion donne naissance au violet, symbole de l’énergie pure.</p>
+            </div>
+          </div>
+
+          <div class="modal-image-wrapper no-bg">
+            <img src="../../assets/img/AInergy/Popin03-ainergy-A.webp" alt="Variations du logo AInergyGym : icône circulaire et versions horizontales sur fonds gris, noir et blanc" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Colors Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Palette couleurs</h4>
+          <div class="modal-image-wrapper no-bg">
+            <img src="../../assets/img/AInergy/Popin03-ainergy-B.webp" alt="Palette de couleurs AInergyGym : Energy Violet, Energy Red, Electric Blue, dégradé, Primary Dark, White, Gray-Violet" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Typography Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title" style="text-align: right;">Typographie</h4>
+          <div class="modal-image-wrapper no-bg">
+            <img src="../../assets/img/AInergy/Popin03-ainergy-C.webp" alt="Typographies AInergyGym : Orbiton et Space Grotesk en styles regular et bold" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- UI Kit Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">composants et UI Kit</h4>
+          <p class="modal-text-desc" style="margin-bottom: 1.5rem;">Mise en place des composants et du UI Kit. Cette étape a été le pilier de ma stratégie pour garantir la cohérence visuelle de l’application. J'ai structuré le projet autour d'un système robuste en définissant des variables de couleurs et des styles de texte précis.</p>
+          
+          <div class="modal-personas-list">
+            <!-- Atoms -->
+            <div>
+              <p class="modal-text-desc" style="font-weight: 700; margin-bottom: 0.5rem; text-align: center;">Les "Atomes" -Éléments de base</p>
+              <div class="modal-image-wrapper">
+                <img src="../../assets/img/AInergy/Popin03-ainergy-D.webp" alt="Design system AInergyGym : boutons, icônes, logo, composants UI et navigation" class="modal-image" />
+              </div>
+            </div>
+            <!-- Molecules -->
+            <div>
+              <p class="modal-text-desc" style="font-weight: 700; margin-bottom: 0.5rem; text-align: center;">Les "Molécules" -Composants combinés</p>
+              <div class="modal-image-wrapper">
+                <img src="../../assets/img/AInergy/Popin03-ainergy-E.webp" alt="Design system AInergyGym : box textes, titres, messages, alertes et composants barre de progression" class="modal-image" />
+              </div>
+            </div>
+            <!-- Organisms -->
+            <div>
+              <p class="modal-text-desc" style="font-weight: 700; margin-bottom: 0.5rem; text-align: center;">Les "Organismes" -Blocs complexes</p>
+              <div class="modal-image-wrapper">
+                <img src="../../assets/img/AInergy/Popin03-ainergy-F.webp" alt="Composants Tabs menu et cards de l'interface AInergyGym sur fond sombre" class="modal-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- High Fidelity Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Wireframes <span style="font-size: 24px; font-weight: 500; display: block; margin-top: 0.5rem;">HIGH FIDELITY</span></h4>
+          <div class="modal-image-wrapper no-bg">
+            <img src="../../assets/img/AInergy/Popin03-ainergy-G.webp" alt="Maquettes finales de l'app AInergyGym : onboarding, home, session et suivi santé" class="modal-image" />
+          </div>
+          <div class="modal-image-wrapper no-bg">
+            <img src="../../assets/img/AInergy/Popin03-ainergy-H.webp" alt="Maquettes finales de l'app AInergyGym : onboarding, home, session et suivi santé" class="modal-image" />
+          </div>
+        </div>
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 04 Modal -->
+  <div id="process-modal-4" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <div class="modal-step-header">
+          <span class="modal-step-number">04</span>
+          <h3 class="modal-step-title">Prototypage</h3>
+        </div>
+
+        <!-- Prototype Section -->
+        <div class="modal-section">
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+              <div class="modal-callout">
+                <p>Conception d'un prototype interactif haute fidélité. Une immersion dans le futur du sport. Le prototype permet de simuler l'expérience utilisateur complète, de l'entrée dans la salle à la réalisation d'une séance personnalisée.</p>
+              </div>
+              <a href="https://www.figma.com/proto/KhkUp9a1bqqweDqfEKEtES/AInergy-2050--Copy-?node-id=651-4551&viewport=-21%2C163%2C0.04&t=xyipatPcayZ2XFA7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=651%3A4551&page-id=35%3A2" target="_blank" class="solution-cta" style="margin-top: 1rem; padding-left: 0;">
+                Voir le prototype
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+            <div class="modal-col-title">
+              <h4 class="modal-section-title-small">Immersion interactive</h4>
+            </div>
+          </div>
+          
+          <!-- Mobile Content -->
+          <div class="mobile-only">
+            <h4 class="modal-section-title-small" style="margin-bottom: 1rem;">Immersion interactive</h4>
+            <div class="modal-callout" style="margin-bottom: 1rem;">
+              <p>Conception d'un prototype interactif haute fidélité. Une immersion dans le futur du sport. Le prototype permet de simuler l'expérience utilisateur complète, de l'entrée dans la salle à la réalisation d'une séance personnalisée.</p>
+            </div>
+            <a href="https://www.figma.com/proto/KhkUp9a1bqqweDqfEKEtES/AInergy-2050--Copy-?node-id=651-4551&viewport=-21%2C163%2C0.04&t=xyipatPcayZ2XFA7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=651%3A4551&page-id=35%3A2" target="_blank" class="solution-cta" style="margin-bottom: 1.5rem; padding-left: 0;">
+              Voir le prototype
+              <span class="cta-arrow">→</span>
+            </a>
+          </div>
+
+          <div class="modal-image-wrapper" style="aspect-ratio: 16/9; background-color: #000; box-shadow: var(--shadow-soft);">
+            <iframe src="https://player.vimeo.com/video/1193004780?badge=0&autopause=0&player_id=0&app_id=58479" 
+              style="width: 100%; height: 100%;" 
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              title="Prototype IAnergy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

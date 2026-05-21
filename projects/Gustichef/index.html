@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gusti-Chef — UX/UI Case Study</title>
+  <!-- css style -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="root">
+    <!-- Navigation -->
+    <header class="navbar">
+      <nav class="nav-container">
+        <a href="../../landing/index.html" class="nav-logo" aria-label="Georgina Cierra — Home">
+          <img src="../../assets/img/logo-georgina.webp" alt="Logo icon and name Georgina Cierra" />
+        </a>
+        <div class="nav-links">
+          <a href="../../landing/index.html" class="nav-link active" data-path="/">Mes projets</a>
+          <a href="" class="nav-link" data-path="/about">À propos</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="case-study-wrapper">
+        <!-- Desktop Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-top">
+            <a href="../../landing/index.html" class="sidebar-back">
+              <span class="sidebar-back-arrow">←</span>
+              <span class="sidebar-back-text">Retourner au jardin</span>
+            </a>
+            <h2 class="sidebar-title">
+              GustiChef
+            </h2>
+          </div>
+
+          <!-- Sidebar Navigation -->
+          <nav class="sidebar-nav" aria-label="Case study sections">
+            <a href="#context" class="sidebar-nav-item" data-section="context">
+              <span class="sidebar-nav-num">01</span>
+              <span class="sidebar-nav-label">Contexte</span>
+            </a>
+            <a href="#problem-goals" class="sidebar-nav-item" data-section="problem-goals">
+              <span class="sidebar-nav-num">02</span>
+              <span class="sidebar-nav-label">Problématique et objectifs</span>
+            </a>
+            <a href="#process" class="sidebar-nav-item" data-section="process">
+              <span class="sidebar-nav-num">03</span>
+              <span class="sidebar-nav-label">Processus</span>
+            </a>
+            <a href="#solution" class="sidebar-nav-item" data-section="solution">
+              <span class="sidebar-nav-num">04</span>
+              <span class="sidebar-nav-label">Solution</span>
+            </a>
+            <a href="#results" class="sidebar-nav-item" data-section="results">
+              <span class="sidebar-nav-num">05</span>
+              <span class="sidebar-nav-label">Résultats</span>
+            </a>
+            <a href="#skills" class="sidebar-nav-item" data-section="skills">
+              <span class="sidebar-nav-num">06</span>
+              <span class="sidebar-nav-label">Compétences</span>
+            </a>
+          </nav>
+
+          <!-- Sidebar Footer -->
+          <div class="sidebar-footer">
+            <p class="sidebar-footer-text">
+              Chaque projet · <br> une fleur dans le jardin
+            </p>
+          </div>
+        </aside>
+
+        <!-- Mobile Top Bar -->
+        <div class="mobile-topbar">
+          <a href="#top" class="mobile-topbar-title">
+            Gusti<span class="mobile-topbar-accent">Chef</span><span class="mobile-topbar-dot">.</span>
+          </a>
+          <nav class="mobile-topbar-nav">
+            <a href="#context" class="mobile-nav-item" data-section="context">01 · Context</a>
+            <a href="#problem-goals" class="mobile-nav-item" data-section="problem-goals">02 · Problématique et
+              Objectifs</a>
+            <a href="#process" class="mobile-nav-item" data-section="process">03 · Processus</a>
+            <a href="#solution" class="mobile-nav-item" data-section="solution">04 · Solution</a>
+            <a href="#results" class="mobile-nav-item" data-section="results">05 · Résultats</a>
+            <a href="#skills" class="mobile-nav-item" data-section="skills">06 · Compétences</a>
+          </nav>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content-area">
+          <!-- Hero Header -->
+          <header id="top" class="case-study-hero">
+            <p class="hero-eyebrow">
+              Étude de cas - 2026 - Design UX/UI
+            </p>
+            <h1 class="hero-title">
+              Gusti<span class="hero-accent">Chef</span>
+            </h1>
+            <p class="hero-description">
+              Gusti-Chef est une application conçue pour simplifier les démarches entre les chefs à domicile et leurs
+              clients. L'interface a pour objectif de mettre en avant les créations culinaires, les plats et les moments
+              de partage, tout en facilitant le contact et la réservation entre les deux parties.
+            </p>
+            <ul class="hero-tags">
+              <li class="hero-tag">UI /UX</li>
+              <li class="hero-tag">Design</li>
+              <li class="hero-tag">Figma</li>
+              <li class="hero-tag">Prototypage</li>
+            </ul>
+
+            <a href="https://www.figma.com/proto/AbtU96JzXz1FA6xDrtkcmO/gusti-chef-MDS?node-id=286-2728&viewport=670%2C-507%2C0.17&t=CslgwE6znpVPrbVK-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=286%3A2728&show-proto-sidebar=1&page-id=0%3A1"
+              class="solution-cta" target="_blank" rel="noopener noreferrer">
+              Voir le prototype Figma
+              <span class="cta-arrow">→</span>
+            </a>
+          </header>
+
+          <!-- Hero Image Placeholder -->
+          <div class="hero-image-section">
+            <figure class="image-placeholder botanical-surface">
+              <div class="placeholder-content">
+                <img src="../../assets/img/img01-gustichef.webp"
+                  alt="Logo de GustiChef et écrans d'accueil d'introduction de l'application mobile sur smartphone."
+                  style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+              </div>
+            </figure>
+          </div>
+
+          <!-- 01 — Context -->
+          <section id="context" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">01</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Contexte</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Une application au service des chefs et de leurs clients.
+            </h2>
+
+            <div class="context-grid">
+              <p class="context-main">
+                Gusti-Chef est une application conçue pour simplifier les démarches entre les chefs à domicile et leurs
+                clients. L'interface a pour objectif de mettre en avant les créations culinaires, les plats et les
+                moments de partage, tout en facilitant le contact et la réservation entre les deux parties.
+              </p>
+              <aside class="context-sidebar">
+                <div class="context-item">
+                  <p class="context-label">Rôle</p>
+                  <p class="context-value">Webdesigner</p>
+                </div>
+                <div class="context-item">
+                  <p class="context-label">Équipe</p>
+                  <p class="context-value">
+                    1 DA · 1 marketing · 1 développeur · 1 webdesigner
+                  </p>
+                </div>
+                <div class="context-item">
+                  <p class="context-label">Durée</p>
+                  <p class="context-value">3 mois</p>
+                </div>
+                <div class="context-item">
+                  <p class="context-label">Outils</p>
+                  <p class="context-value">Figma · Google Forms</p>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          <!-- 02 — Problem & Goals -->
+          <section id="problem-goals" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">02</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Problématique & objectifs</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Le point de départ
+            </h2>
+
+            <div class="problem-goals-grid">
+              <!-- Problems -->
+              <article class="problem-card">
+                <p class="problem-header">Problèmes</p>
+                <ul class="problem-list">
+                  <li>
+                    De quelle manière une application mobile peut-elle simplifier le parcours de réservation d'un chef à
+                    domicile tout en garantissant un suivi de prestation rigoureux pour les deux parties ?
+                  </li>
+                  <li>
+                    Comment valoriser les créations culinaires tout en facilitant la prise de contact et la réservation
+                    ?
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Goals -->
+              <article class="goals-card">
+                <p class="goals-header">Objectifs</p>
+                <ul class="goals-list">
+                  <li>
+                    Une solution centrée utilisateur visant à simplifier le parcours de réservation tout en assurant un
+                    suivi fluide des prestations.
+                  </li>
+                  <li>
+                    Profils chefs enrichis avec contenus visuels immersifs (photos, avis, présentation), messagerie
+                    intégré pour la communication directe avant réservation, suivi de prestation en timeline et système
+                    d'avis vérifiés.
+                  </li>
+                  <li>
+                    Deux parcours distincts (client et chef) conçus pour répondre aux besoins spécifiques de chaque
+                    utilisateur.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <!-- 03 — Process -->
+          <section id="process" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">03</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Processus</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Quatre étapes pour concevoir une expérience fluide et intuitive.
+            </h2>
+
+            <div class="process-grid">
+              <article class="process-card">
+                <p class="modal-step-number">01</p>
+                <h3 class="process-title">Benchmark concurrentiel</h3>
+                <p class="process-desc">
+                  Analyse des sites et applications disponibles sur le marché. Identification des fonctionnalités UX et
+                  des tendances UI.
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-1">Voir le processus
+                  ↗</button>
+              </article>
+
+              <article class="process-card">
+                <p class="modal-step-number">02</p>
+                <h3 class="process-title">Recherche utilisateurs</h3>
+                <p class="process-desc">
+                  Analyse de l'enquête : sondage côté client, Synthèse des priorités de conceptio et Analyse de
+                  l'entretien exploratoire
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-2">Voir le processus
+                  ↗</button>
+              </article>
+
+              <article class="process-card">
+                <p class="modal-step-number">03</p>
+                <h3 class="process-title">Prototypage & validation utilisateur</h3>
+                <p class="process-desc">
+                  Création du prototype haute fidélité, tests utilisateurs et optimisations de l’expérience
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-3">Voir le processus
+                  ↗</button>
+              </article>
+
+              <article class="process-card">
+                <p class="modal-step-number">04</p>
+                <h3 class="process-title">Guide d'utilisation</h3>
+                <p class="process-desc">
+                  Transmission du prototype interactif, guide d’utilisation et documentation
+                </p>
+                <button type="button" class="process-detail-btn" data-modal-target="process-modal-4">Voir le processus
+                  ↗</button>
+              </article>
+            </div>
+          </section>
+
+          <!-- 04 — Solution -->
+          <section id="solution" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">04</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Solution</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Deux parcours, une expérience fluide et centrée utilisateur.
+            </h2>
+
+            <div class="solution-content">
+              <p class="solution-intro">
+                Une interface centrée sur la confiance et le partage : chaque profil chef devient une vitrine culinaire,
+                chaque réservation s'accompagne d'un suivi clair pour les deux parties.
+              </p>
+
+              <!-- Image 1 -->
+              <div class="solution-image reveal">
+                <figure class="image-placeholder botanical-surface">
+                  <div class="placeholder-content">
+                    <img src="../../assets/img/img02-gustichef.webp"
+                      alt="Maquettes de l'application GustiChef : recherche de chefs, profil de la chef Camille Lefebvre et suivi des revenus"
+                      style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+                  </div>
+                </figure>
+              </div>
+
+              <!-- Image 2 -->
+              <div class="solution-image reveal">
+                <figure class="image-placeholder botanical-surface">
+                  <div class="placeholder-content">
+                    <img src="../../assets/img/img03-gustichef.webp"
+                      alt="Écrans de l'application GustiChef montrant la gestion des demandes clients, le fil d'actualité et l'historique des réservations."
+                      style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+                  </div>
+                </figure>
+              </div>
+
+              <a href="https://www.figma.com/proto/AbtU96JzXz1FA6xDrtkcmO/gusti-chef-MDS?node-id=286-2728&viewport=670%2C-507%2C0.17&t=CslgwE6znpVPrbVK-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=286%3A2728&show-proto-sidebar=1&page-id=0%3A1"
+                class="solution-cta" target="_blank" rel="noopener noreferrer">
+                Voir le prototype Figma
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- 05 — Results -->
+          <section id="results" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">05</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Résultats</span>
+              </p>
+            </div>
+            <h2 class="section-title">
+              Des résultats qui mettent les chefs en lumière.
+            </h2>
+
+            <div class="results-content">
+              <!-- Results List -->
+              <ul class="results-list">
+                <li class="result-item">
+                  <span class="result-metric">Prototype interactif</span>
+                  <span class="result-label">clair et intuitif couvrant deux parcours distincts (client et chef)</span>
+                </li>
+                <li class="result-item">
+                  <span class="result-metric">Parcours utilisateur</span>
+                  <span class="result-label">défini et validé par les tests [Description]</span>
+                </li>
+                <li class="result-item">
+                  <span class="result-metric">Vue client et chef</span>
+                  <span class="result-label">conçue pour répondre aux besoins spécifiques de chaque utilisateur</span>
+                </li>
+              </ul>
+          </section>
+
+          <!-- 06 — Skills -->
+          <section id="skills" class="case-section">
+            <div class="section-header">
+              <p class="section-eyebrow">
+                <span class="section-index">06</span>
+                <span class="section-divider">—</span>
+                <span class="section-label">Compétences</span>
+              </p>
+            </div>
+            <h2 class="section-title">Outils & savoir-faire mobilisés.</h2>
+
+            <ul class="skills-list">
+              <li class="skill-badge">Benchmark concurrentiel</li>
+              <li class="skill-badge">UX Research (questionnaire + entretiens)</li>
+              <li class="skill-badge">Définition personas</li>
+              <li class="skill-badge">Architecture de l'information (Sitemap)</li>
+              <li class="skill-badge">Wireframing basse fidélité</li>
+              <li class="skill-badge">Prototypage haute fidélité (Figma)</li>
+              <li class="skill-badge">Tests utilisateurs & itérations</li>
+              <li class="skill-badge">Guide d'utilisation</li>
+            </ul>
+          </section>
+
+          <!-- CTA Footer -->
+          <section class="cta-section">
+            <div class="cta-divider">
+              <span class="divider-line"></span>
+              <svg class="botanical-sprig" width="56" height="20" viewBox="0 0 56 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10 H54" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" />
+                <path d="M18 10 C 16 6, 13 5, 10 6 C 12 8, 15 9, 18 10 Z" fill="currentColor" opacity="0.6" />
+                <path d="M22 10 C 20 14, 17 15, 14 14 C 16 12, 19 11, 22 10 Z" fill="currentColor" opacity="0.45" />
+                <path d="M38 10 C 40 6, 43 5, 46 6 C 44 8, 41 9, 38 10 Z" fill="currentColor" opacity="0.6" />
+                <path d="M34 10 C 36 14, 39 15, 42 14 C 40 12, 37 11, 34 10 Z" fill="currentColor" opacity="0.45" />
+              </svg>
+              <span class="divider-line"></span>
+            </div>
+
+            <p class="cta-eyebrow">Exploration</p>
+
+            <div class="cta-links">
+              <a href="/" class="cta-link-back">
+                <span class="cta-arrow">←</span>
+                <span>Jardin des fleurs</span>
+              </a>
+              <span class="cta-separator"></span>
+              <a href="#" class="cta-link-next">
+                <span>Projet suivant</span>
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Step 01 Modal -->
+  <div id="process-modal-1" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <div class="modal-step-header">
+          <span class="modal-step-number">01</span>
+          <h3 class="modal-step-title">Analyse & stratégie</h3>
+        </div>
+
+        <!-- Benchmark Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Benchmark concurrentiel</h4>
+          <div class="modal-text-content">
+            <p>Analyse des sites et applications disponibles sur le marché. Identification des fonctionnalités UX et des tendances UI.</p>
+          </div>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in01-A.webp" alt="Benchmark concurrentiel Gustichef : analyse de TakeAChef, GetChef, ChefMaison et Saveurs & Chef" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Research Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Recherche utilisateurs</h4>
+          
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/gustichef/gusti-pop-in01-B.webp" alt="Formulaire de sondage Gustichef : introduction au projet de fin d'études MyDigitalSchool" class="modal-image" />
+          </div>
+
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+               <div class="modal-text-content">
+                <p>Analyse de l'enquête : sondage côté client<br><strong>Synthèse des priorités de conception</strong></p>
+              </div>
+            </div>
+            <div class="modal-col-title">
+              <!-- Empty for layout alignment -->
+            </div>
+          </div>
+          
+          <div class="mobile-only">
+             <div class="modal-text-content" style="text-align: center; margin-bottom: 1.5rem;">
+                <p>Analyse de l'enquête : sondage côté client<br><strong>Synthèse des priorités de conception</strong></p>
+              </div>
+          </div>
+
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/gustichef/gusti-pop-in01-C.webp" alt="Tableau d'insights UX/UI Gustichef : 8 thèmes clés issus de la recherche utilisateur" class="modal-image" />
+          </div>
+
+          <!-- Interview Analysis Callout -->
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+              <div class="modal-callout">
+                <p><strong>Analyse de l'entretien exploratoire</strong></p>
+                <p>Méthode appliquée : Rob Fitzpatrick — The Mom Test</p>
+                <p>quatre priorités majeures se dégagent :</p>
+                <ol>
+                  <li>L'expérience visuelle et l'inspiration</li>
+                  <li>Le parcours de paiement</li>
+                  <li>La fluidité des échanges</li>
+                  <li>La dimension humaine</li>
+                </ol>
+              </div>
+            </div>
+            <div class="modal-col-title">
+              <h4 class="modal-section-title-small">Analyse qualitative</h4>
+            </div>
+          </div>
+
+          <div class="mobile-only">
+            <h4 class="modal-section-title-small" style="margin-bottom: 1rem;">Analyse qualitative</h4>
+            <div class="modal-callout">
+                <p><strong>Analyse de l'entretien exploratoire</strong></p>
+                <p>Méthode appliquée : Rob Fitzpatrick — The Mom Test</p>
+                <p>quatre priorités majeures se dégagent :</p>
+                <ol>
+                  <li>L'expérience visuelle et l'inspiration</li>
+                  <li>Le parcours de paiement</li>
+                  <li>La fluidité des échanges</li>
+                  <li>La dimension humaine</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personas Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">définition des personas</h4>
+          <div class="modal-text-content">
+            <p>Définition de 4 personas, 2 profils client et 2 profils chef pour explorer chaque univers traité dans l'application</p>
+          </div>
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/gustichef/gusti-pop-in01-D.webp" alt="Persona Marc, 38 ans, entrepreneur parisien cherchant un chef privé pour ses réceptions" class="modal-image" />
+          </div>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in01-E.webp" alt="Carte d'empathie du persona Marc : pensées, environnement, comportements, frustrations et motivations" class="modal-image" />
+          </div>
+        </div>
+
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Step 01 Modal -->
+
+  <!-- Step 02 Modal -->
+  <div id="process-modal-2" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <div class="modal-step-header">
+          <span class="modal-step-number">02</span>
+          <h3 class="modal-step-title">Conception de l'expérience</h3>
+        </div>
+
+        <!-- Information Architecture Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Architecture de l'information</h4>
+          <div class="modal-text-content">
+            <p><strong>Arborescence</strong></p>
+          </div>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in02-A.webp" alt="Architecture de l'app Gustichef : navigation, onboarding, profils chef/client, messagerie et paramètres" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Wireframing Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Wireframing</h4>
+          
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/gustichef/gusti-pop-in02-B.webp" alt="Wireframes Gustichef : welcome, accueil inspiration/demandes et page trouver un chef" class="modal-image" />
+          </div>
+
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/gustichef/gusti-pop-in02-C.webp" alt="Wireframes Gustichef : profil chef avec galerie/menu/avis et tunnel de réservation complet" class="modal-image" />
+          </div>
+
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in02-D.webp" alt="profil client avec agenda/réservations, posts aimés, chefs sauvegardés et messagerie" class="modal-image" />
+          </div>
+        </div>
+
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Step 02 Modal -->
+
+  <!-- Step 03 Modal -->
+  <div id="process-modal-3" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <div class="modal-step-header">
+          <span class="modal-step-number">03</span>
+          <h3 class="modal-step-title">Prototypage & validation utilisateur</h3>
+        </div>
+
+        <!-- Identité Visuelle Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Identité Visuelle</h4>
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+              <div class="modal-callout">
+                <p>Univers de marque Gusti Chef se positionne dans l'univers de la gastronomie artisanale et premium. La palette évoque la cuisine authentique, la chaleur d'une cuisine professionnelle, et la sophistication d'une expérience culinaire haut de gamme.</p>
+              </div>
+            </div>
+            <div class="modal-col-title">
+              <h4 class="modal-section-title-small">Univers & Palette</h4>
+            </div>
+          </div>
+          
+          <div class="mobile-only">
+            <h4 class="modal-section-title-small" style="margin-bottom: 1rem;">Univers & Palette</h4>
+            <div class="modal-callout">
+               <p>Univers de marque Gusti Chef se positionne dans l'univers de la gastronomie artisanale et premium. La palette évoque la cuisine authentique, la chaleur d'une cuisine professionnelle, et la sophistication d'une expérience culinaire haut de gamme.</p>
+            </div>
+          </div>
+
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/gustichef/gusti-pop-in03-A.webp" alt="Typographies et logo Gustichef : Dosis, Brittanny Signature et variations du logo en teal et terracotta" class="modal-image" />
+          </div>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in03-B.webp" alt="Palette de couleurs Gustichef : vert sauge, teal foncé, terracotta, crème, noir et blanc cassé" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Design System Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Bibliothèque de Composants</h4>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in03-C.webp" alt="Design system Gustichef : navigation, profils, cards, catégories, formulaires, boutons et icônes" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Prototype Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">prototype</h4>
+          <div class="modal-text-content">
+            <p><a href="https://www.figma.com/proto/AbtU96JzXz1FA6xDrtkcmO/gusti-chef-MDS?node-id=286-2728&viewport=670%2C-507%2C0.17&t=CslgwE6znpVPrbVK-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=286%3A2728&show-proto-sidebar=1&page-id=0%3A1" target="_blank" style="color: rgb(var(--highlight-rgb)); text-decoration: underline;">voir prototype →</a></p>
+          </div>
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/gustichef/gusti-pop-in03-D.webp" alt="Maquettes finales Gustichef : onboarding galerie culinaire et écran de connexion" class="modal-image" />
+          </div>
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/gustichef/gusti-pop-in03-E.webp" alt="Maquettes finales Gustichef : onboarding, inscription, connexion et réinitialisation du mot de passe" class="modal-image" />
+          </div>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in03-F.webp" alt="Maquettes finales Gustichef : accueil découvrir, profil chef Camille Lefebvre, menus et recherche de chefs" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Onboarding Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">onboarding</h4>
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/gustichef/gusti-pop-in03-G.webp" alt="Maquettes finales Gustichef : onboarding client en 5 étapes, de la découverte à la réservation" class="modal-image" />
+          </div>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in03-H.webp" alt="Maquettes finales Gustichef : onboarding chef en 5 étapes, du profil à la publication des menus" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- User Journey Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">user journey</h4>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in03-I.webp" alt="Maquettes finales Gustichef : User Journey Map Gustichef : parcours client Léa en 5 étapes, de la découverte à la messagerie" class="modal-image" />
+          </div>
+        </div>
+
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Step 03 Modal -->
+
+  <!-- Step 04 Modal -->
+  <div id="process-modal-4" class="process-modal-overlay" aria-hidden="true">
+    <div class="process-modal" role="dialog" aria-modal="true">
+      <div class="process-modal-header">
+        <button type="button" class="process-modal-close" aria-label="Fermer la modale">&times;</button>
+      </div>
+      <div class="process-modal-body">
+        <div class="modal-step-header">
+          <span class="modal-step-number">04</span>
+          <h3 class="modal-step-title">Guide d'utilisation</h3>
+        </div>
+
+        <!-- Guides Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Guides</h4>
+          <div class="modal-row hide-mobile">
+            <div class="modal-col-text">
+               <h4 class="modal-section-title-small" style="margin-bottom: 1rem;">Guide de test prototype</h4>
+               <div class="modal-text-content">
+                <p>Deux scénarios utilisateurs ont été définis pour cadrer les sessions de test : Léa, cliente qui découvre l'app et effectue une réservation, et Camille, cheffe qui gère son profil et répond à une demande.</p>
+              </div>
+            </div>
+            <div class="modal-col-title">
+              <!-- Empty for layout alignment -->
+            </div>
+          </div>
+
+          <div class="mobile-only">
+             <h4 class="modal-section-title-small" style="margin-bottom: 1rem;">Guide de test prototype</h4>
+             <div class="modal-text-content" style="margin-bottom: 1.5rem;">
+                <p>Deux scénarios utilisateurs ont été définis pour cadrer les sessions de test : Léa, cliente qui découvre l'app et effectue une réservation, et Camille, cheffe qui gère son profil et répond à une demande.</p>
+              </div>
+          </div>
+
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in04-A.webp" alt="Guide de test du prototype Gustichef : scénarios client (Léa) et chef (Camille) en 6 étapes" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- Color System Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">Système de couleurs par rôle</h4>
+          <div class="modal-text-content">
+            <p>Pour faciliter la lecture du prototype en équipe et guider le développeur, chaque type d'écran a une identité couleur : vert pour les écrans partagés, bleu pour les écrans client, rouge pour les écrans chef.</p>
+          </div>
+          <div class="modal-image-wrapper" style="margin-bottom: 1.5rem;">
+            <img src="../../assets/img/gustichef/gusti-pop-in04-B.webp" alt="UI Guidelines Gustichef : code couleur par rôle — vert partagé, teal client, terracotta chef" class="modal-image" />
+          </div>
+          <div class="modal-image-wrapper">
+            <img src="../../assets/img/gustichef/gusti-pop-in04-C.webp" alt="exemple écrans avec guidelin chef et client, parcours client en 5 étapes et parcours chef en 5 étapes" class="modal-image" />
+          </div>
+        </div>
+
+        <!-- User Journey Section -->
+        <div class="modal-section">
+          <h4 class="modal-section-title">user journey</h4>
+          <div class="modal-text-content">
+            <p>Un guide d'utilisation a été rédigé pour les deux profils — chef et client — couvrant l'inscription, la gestion des réservations, la transparence des frais et les questions fréquentes.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="process-modal-footer">
+        <button type="button" class="process-detail-btn process-modal-close-btn">Retourner au projet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Step 04 Modal -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
