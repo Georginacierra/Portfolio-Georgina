@@ -1,283 +1,346 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Georgina Cierra - UI UX Designer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Georgina Cierra - UI UX Designer</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <div id="root">
+      <!-- Navigation -->
+      <header class="navbar">
+        <nav class="nav-container">
+          <a href="/" class="nav-logo" aria-label="Georgina Cierra — Home"
+            ><img
+              src="../assets/img/logo-georgina.webp"
+              alt="Logo icon and name Georgina Cierra"
+          /></a>
+          <div class="nav-links">
+            <a href="/" class="nav-link active" data-path="/">Mes projets</a>
+            <a href="/about" class="nav-link" data-path="/about">À propos</a>
+          </div>
+        </nav>
+      </header>
 
-<body>
-  <div id="root">
-    <!-- Navigation -->
-    <header class="navbar">
-      <nav class="nav-container">
-        <a href="/" class="nav-logo" aria-label="Georgina Cierra — Home"><img src="../assets/img/logo-georgina.webp"
-            alt="Logo icon and name Georgina Cierra" /></a>
-        <div class="nav-links">
-          <a href="/" class="nav-link active" data-path="/">Mes projets</a>
-          <a href="/about" class="nav-link" data-path="/about">À propos</a>
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <!-- Centered Hero Text -->
+          <div class="hero-text reveal is-visible">
+            <h1 class="hero-title">
+              <span class="title-line">Georgina Cierra</span>
+            </h1>
+            <hr class="hero-divider" />
+            <p class="hero-subtitle">UI UX Designer</p>
+            <p class="hero-tagline">Chaque projet, une intention de design.</p>
+            <p class="hero-hint">
+              Survolez chaque fleur<br />
+              pour découvrir mes projets
+            </p>
+          </div>
+
+          <!-- Desktop Flowers (Corner Positions) -->
+          <div class="flowers-container">
+            <!-- Flower 01 - Top Left -->
+            <div class="flower-wrapper flower-tl" data-flower-id="01">
+              <div class="flower-image-wrapper">
+                <img
+                  src="../assets/img/flowers/ixora-flower.webp"
+                  alt="Ixora rouge"
+                  class="flower-image"
+                />
+                <span class="flower-label">01</span>
+              </div>
+              <div class="flower-card">
+                <div class="card-header">
+                  <p class="card-eyebrow">
+                    <span class="card-num">01</span>Design prospectif
+                  </p>
+                  <button
+                    class="card-close"
+                    aria-label="Fermer"
+                    data-flower-id="01"
+                  >
+                    ×
+                  </button>
+                </div>
+                <h3 class="card-title">IAnergy</h3>
+                <hr class="card-divider" />
+                <p class="card-description">
+                  Prototype d'application futuriste pour une salle de sport
+                  connectée projetée en 2050.
+                </p>
+                <a href="../projects/IAnergy-gym/index.html" class="card-cta">
+                  <span class="cta-arrow">→</span>
+                  View project
+                </a>
+              </div>
+            </div>
+
+            <!-- Flower 02 - Bottom Left -->
+            <div class="flower-wrapper flower-bl" data-flower-id="02">
+              <div class="flower-image-wrapper">
+                <img
+                  src="../assets/img/flowers/hibiscus-flower.webp"
+                  alt="Hibiscus pêche"
+                  class="flower-image"
+                />
+                <span class="flower-label">02</span>
+              </div>
+              <div class="flower-card">
+                <div class="card-header">
+                  <p class="card-eyebrow">
+                    <span class="card-num">02</span>UX Case Study
+                  </p>
+                  <button
+                    class="card-close"
+                    aria-label="Fermer"
+                    data-flower-id="02"
+                  >
+                    ×
+                  </button>
+                </div>
+                <h3 class="card-title">Gustichef</h3>
+                <hr class="card-divider" />
+                <p class="card-description">
+                  Plateforme de services de chefs à domicile.
+                </p>
+                <a href="../projects/Gustichef/index.html" class="card-cta">
+                  <span class="cta-arrow">→</span>
+                  View project
+                </a>
+              </div>
+            </div>
+
+            <!-- Flower 03 - Top Right -->
+            <div class="flower-wrapper flower-tr" data-flower-id="03">
+              <div class="flower-image-wrapper">
+                <img
+                  src="../assets/img/flowers/sunflower-flower.webp"
+                  alt="Tournesol"
+                  class="flower-image"
+                />
+                <span class="flower-label">03</span>
+              </div>
+              <div class="flower-card">
+                <div class="card-header">
+                  <p class="card-eyebrow">
+                    <span class="card-num">03</span>WordPress / Web Design
+                  </p>
+                  <button
+                    class="card-close"
+                    aria-label="Fermer"
+                    data-flower-id="03"
+                  >
+                    ×
+                  </button>
+                </div>
+                <h3 class="card-title">Les Martines</h3>
+                <hr class="card-divider" />
+                <p class="card-description">
+                  Refonte du site web sous WordPress et optimisation de
+                  l'interface.
+                </p>
+                <a href="../projects/Les-martines/index.html" class="card-cta">
+                  <span class="cta-arrow">→</span>
+                  View project
+                </a>
+              </div>
+            </div>
+
+            <!-- Flower 04 - Bottom Right -->
+            <div class="flower-wrapper flower-br" data-flower-id="04">
+              <div class="flower-image-wrapper">
+                <img
+                  src="../assets/img/flowers/Bougainvillea-flower.webp"
+                  alt="Bougainvillier rose"
+                  class="flower-image"
+                />
+                <span class="flower-label">04</span>
+              </div>
+              <div class="flower-card">
+                <div class="card-header">
+                  <p class="card-eyebrow">
+                    <span class="card-num">04</span>Alternance
+                  </p>
+                  <button
+                    class="card-close"
+                    aria-label="Fermer"
+                    data-flower-id="04"
+                  >
+                    ×
+                  </button>
+                </div>
+                <h3 class="card-title">Fast Retailing</h3>
+                <hr class="card-divider" />
+                <p class="card-description">
+                  Webdesign et optimisation UX e-commerce pour deux marques
+                  françaises (alternance).
+                </p>
+                <a
+                  href="../projects/Fast-retailing/index.html"
+                  class="card-cta"
+                >
+                  <span class="cta-arrow">→</span>
+                  View project
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Mobile / Tablet Projects Grid -->
+        <section class="mobile-projects">
+          <p class="projects-label">Mes projets</p>
+          <div class="projects-grid">
+            <!-- Project 01 -->
+            <div class="project-item">
+              <div class="project-flower">
+                <img
+                  src="../assets/img/flowers/ixora-flower.webp"
+                  alt="Ixora rouge"
+                  class="project-image"
+                />
+                <span class="project-label">01</span>
+              </div>
+              <div class="project-card">
+                <div class="card-header">
+                  <p class="card-eyebrow">
+                    <span class="card-num">01</span>Design prospectif
+                  </p>
+                </div>
+                <h3 class="card-title">IAnergy</h3>
+                <hr class="card-divider" />
+                <p class="card-description">
+                  Prototype d'application futuriste pour une salle de sport
+                  connectée projetée en 2050.
+                </p>
+                <a href="../projects/IAnergy-gym/index.html" class="card-cta">
+                  <span class="cta-arrow">→</span>
+                  View project
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 02 -->
+            <div class="project-item">
+              <div class="project-flower">
+                <img
+                  src="../assets/img/flowers/hibiscus-flower.webp"
+                  alt="Hibiscus pêche"
+                  class="project-image"
+                />
+                <span class="project-label">02</span>
+              </div>
+              <div class="project-card">
+                <div class="card-header">
+                  <p class="card-eyebrow">
+                    <span class="card-num">02</span>UX Case Study
+                  </p>
+                </div>
+                <h3 class="card-title">Gustichef</h3>
+                <hr class="card-divider" />
+                <p class="card-description">
+                  Plateforme de services de chefs à domicile.
+                </p>
+                <a href="../projects/Gustichef/index.html" class="card-cta">
+                  <span class="cta-arrow">→</span>
+                  View project
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 03 -->
+            <div class="project-item">
+              <div class="project-flower">
+                <img
+                  src="../assets/img/flowers/sunflower-flower.webp"
+                  alt="Tournesol"
+                  class="project-image"
+                />
+                <span class="project-label">03</span>
+              </div>
+              <div class="project-card">
+                <div class="card-header">
+                  <p class="card-eyebrow">
+                    <span class="card-num">03</span>WordPress / Web Design
+                  </p>
+                </div>
+                <h3 class="card-title">Les Martines</h3>
+                <hr class="card-divider" />
+                <p class="card-description">
+                  Refonte du site web sous WordPress et optimisation de
+                  l'interface.
+                </p>
+                <a href="../projects/Les-martines/index.html" class="card-cta">
+                  <span class="cta-arrow">→</span>
+                  View project
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 04 -->
+            <div class="project-item">
+              <div class="project-flower">
+                <img
+                  src="../assets/img/flowers/Bougainvillea-flower.webp"
+                  alt="Bougainvillier rose"
+                  class="project-image"
+                />
+                <span class="project-label">04</span>
+              </div>
+              <div class="project-card">
+                <div class="card-header">
+                  <p class="card-eyebrow">
+                    <span class="card-num">04</span>Alternance
+                  </p>
+                </div>
+                <h3 class="card-title">Fast Retailing</h3>
+                <hr class="card-divider" />
+                <p class="card-description">
+                  Webdesign et optimisation UX e-commerce pour deux marques
+                  françaises (alternance).
+                </p>
+                <a
+                  href="../projects/Fast-retailing/index.html"
+                  class="card-cta"
+                >
+                  <span class="cta-arrow">→</span>
+                  View project
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- <span class="footer-label">mon jardin</span> -->
+          <span class="footer-label">Georgina © 2026</span>
+          <span class="footer-links">
+            <a
+              href="https://www.linkedin.com/in/georgina1998cierra/"
+              target="_blank"
+              class="footer-link"
+              >LinkedIn</a
+            >
+            <span class="footer-separator">·</span>
+            <a
+              href="https://www.behance.net/Georginaci2784"
+              target="_blank"
+              class="footer-link"
+              >Behance</a
+            >
+          </span>
         </div>
-      </nav>
-    </header>
+      </footer>
+    </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <!-- Centered Hero Text -->
-        <div class="hero-text reveal is-visible">
-          <h1 class="hero-title">
-            <span class="title-line">Georgina Cierra</span>
-          </h1>
-          <hr class="hero-divider" />
-          <p class="hero-subtitle">UI UX Designer</p>
-          <p class="hero-tagline">Chaque projet, une intention de design.</p>
-          <p class="hero-hint">
-            Survolez chaque fleur<br />
-            pour découvrir mes projets
-          </p>
-        </div>
-
-        <!-- Desktop Flowers (Corner Positions) -->
-        <div class="flowers-container">
-          <!-- Flower 01 - Top Left -->
-          <div class="flower-wrapper flower-tl" data-flower-id="01">
-            <div class="flower-image-wrapper">
-              <img src="../assets/img/flowers" alt="Ixora rouge" class="flower-image" />
-              <span class="flower-label">01</span>
-            </div>
-            <div class="flower-card">
-              <div class="card-header">
-                <p class="card-eyebrow">
-                  <span class="card-num">01</span>Design prospectif
-                </p>
-                <button class="card-close" aria-label="Fermer" data-flower-id="01">
-                  ×
-                </button>
-              </div>
-              <h3 class="card-title">IAnergy</h3>
-              <hr class="card-divider" />
-              <p class="card-description">
-                Prototype d'application futuriste pour une salle de sport
-                connectée projetée en 2050.
-              </p>
-              <a href="../projects/IAnergy-gym/index.html" class="card-cta">
-                <span class="cta-arrow">→</span>
-                View project
-              </a>
-            </div>
-          </div>
-
-          <!-- Flower 02 - Bottom Left -->
-          <div class="flower-wrapper flower-bl" data-flower-id="02">
-            <div class="flower-image-wrapper">
-              <img src="../../public/flowers/flower-02-hibiscus.png" alt="Hibiscus pêche" class="flower-image" />
-              <span class="flower-label">02</span>
-            </div>
-            <div class="flower-card">
-              <div class="card-header">
-                <p class="card-eyebrow">
-                  <span class="card-num">02</span>UX Case Study
-                </p>
-                <button class="card-close" aria-label="Fermer" data-flower-id="02">
-                  ×
-                </button>
-              </div>
-              <h3 class="card-title">Gustichef</h3>
-              <hr class="card-divider" />
-              <p class="card-description">
-                Plateforme de services de chefs à domicile.
-              </p>
-              <a href="../projects/Gustichef/index.html" class="card-cta">
-                <span class="cta-arrow">→</span>
-                View project
-              </a>
-            </div>
-          </div>
-
-          <!-- Flower 03 - Top Right -->
-          <div class="flower-wrapper flower-tr" data-flower-id="03">
-            <div class="flower-image-wrapper">
-              <img src="../../public/flowers/flower-05-sunflower.png" alt="Tournesol" class="flower-image" />
-              <span class="flower-label">03</span>
-            </div>
-            <div class="flower-card">
-              <div class="card-header">
-                <p class="card-eyebrow">
-                  <span class="card-num">03</span>WordPress / Web Design
-                </p>
-                <button class="card-close" aria-label="Fermer" data-flower-id="03">
-                  ×
-                </button>
-              </div>
-              <h3 class="card-title">Les Martines</h3>
-              <hr class="card-divider" />
-              <p class="card-description">
-                Refonte du site web sous WordPress et optimisation de
-                l'interface.
-              </p>
-              <a href="../projects/Les-martines/index.html" class="card-cta">
-                <span class="cta-arrow">→</span>
-                View project
-              </a>
-            </div>
-          </div>
-
-          <!-- Flower 04 - Bottom Right -->
-          <div class="flower-wrapper flower-br" data-flower-id="04">
-            <div class="flower-image-wrapper">
-              <img src="../../public/flowers/flower-04-bougainvillea.png" alt="Bougainvillier rose"
-                class="flower-image" />
-              <span class="flower-label">04</span>
-            </div>
-            <div class="flower-card">
-              <div class="card-header">
-                <p class="card-eyebrow">
-                  <span class="card-num">04</span>Alternance
-                </p>
-                <button class="card-close" aria-label="Fermer" data-flower-id="04">
-                  ×
-                </button>
-              </div>
-              <h3 class="card-title">Fast Retailing</h3>
-              <hr class="card-divider" />
-              <p class="card-description">
-                Webdesign et optimisation UX e-commerce pour deux marques
-                françaises (alternance).
-              </p>
-              <a href="../projects/Fast-retailing/index.html" class="card-cta">
-                <span class="cta-arrow">→</span>
-                View project
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Mobile / Tablet Projects Grid -->
-      <section class="mobile-projects">
-        <p class="projects-label">Mes projets</p>
-        <div class="projects-grid">
-          <!-- Project 01 -->
-          <div class="project-item">
-            <div class="project-flower">
-              <img src="../../public/flowers/flower-01-ixora.png" alt="Ixora rouge" class="project-image" />
-              <span class="project-label">01</span>
-            </div>
-            <div class="project-card">
-              <div class="card-header">
-                <p class="card-eyebrow">
-                  <span class="card-num">01</span>Design prospectif
-                </p>
-              </div>
-              <h3 class="card-title">IAnergy</h3>
-              <hr class="card-divider" />
-              <p class="card-description">
-                Prototype d'application futuriste pour une salle de sport
-                connectée projetée en 2050.
-              </p>
-              <a href="../projects/IAnergy-gym/index.html" class="card-cta">
-                <span class="cta-arrow">→</span>
-                View project
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 02 -->
-          <div class="project-item">
-            <div class="project-flower">
-              <img src="../../public/flowers/flower-02-hibiscus.png" alt="Hibiscus pêche" class="project-image" />
-              <span class="project-label">02</span>
-            </div>
-            <div class="project-card">
-              <div class="card-header">
-                <p class="card-eyebrow">
-                  <span class="card-num">02</span>UX Case Study
-                </p>
-              </div>
-              <h3 class="card-title">Gustichef</h3>
-              <hr class="card-divider" />
-              <p class="card-description">
-                Plateforme de services de chefs à domicile.
-              </p>
-              <a href="../projects/Gustichef/index.html" class="card-cta">
-                <span class="cta-arrow">→</span>
-                View project
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 03 -->
-          <div class="project-item">
-            <div class="project-flower">
-              <img src="../../public/flowers/flower-05-sunflower.png" alt="Tournesol" class="project-image" />
-              <span class="project-label">03</span>
-            </div>
-            <div class="project-card">
-              <div class="card-header">
-                <p class="card-eyebrow">
-                  <span class="card-num">03</span>WordPress / Web Design
-                </p>
-              </div>
-              <h3 class="card-title">Les Martines</h3>
-              <hr class="card-divider" />
-              <p class="card-description">
-                Refonte du site web sous WordPress et optimisation de
-                l'interface.
-              </p>
-              <a href="../projects/Les-martines/index.html" class="card-cta">
-                <span class="cta-arrow">→</span>
-                View project
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 04 -->
-          <div class="project-item">
-            <div class="project-flower">
-              <img src="../../public/flowers/flower-04-bougainvillea.png" alt="Bougainvillier rose"
-                class="project-image" />
-              <span class="project-label">04</span>
-            </div>
-            <div class="project-card">
-              <div class="card-header">
-                <p class="card-eyebrow">
-                  <span class="card-num">04</span>Alternance
-                </p>
-              </div>
-              <h3 class="card-title">Fast Retailing</h3>
-              <hr class="card-divider" />
-              <p class="card-description">
-                Webdesign et optimisation UX e-commerce pour deux marques
-                françaises (alternance).
-              </p>
-              <a href="../projects/Fast-retailing/index.html" class="card-cta">
-                <span class="cta-arrow">→</span>
-                View project
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- <span class="footer-label">mon jardin</span> -->
-        <span class="footer-label">Georgina © 2026</span>
-        <span class="footer-links">
-          <a href="https://www.linkedin.com/in/georgina1998cierra/" target="_blank" class="footer-link">LinkedIn</a>
-          <span class="footer-separator">·</span>
-          <a href="https://www.behance.net/Georginaci2784" target="_blank" class="footer-link">Behance</a>
-        </span>
-      </div>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
