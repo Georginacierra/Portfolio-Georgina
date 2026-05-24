@@ -1,5 +1,5 @@
 /**
- * Gusti-Chef Case Study Page - Vanilla JavaScript
+ * Fast Retailing Case Study Page - Vanilla JavaScript
  * Handles navigation, scroll-based section tracking, and UI interactions
  */
 
@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeSectionTracking();
   ensureFirstAnimation();
   initializeScrollBehavior();
-  initializeModal();
 });
 
 // ============================================
@@ -195,53 +194,4 @@ window.addEventListener("resize", () => {
 if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   document.documentElement.style.scrollBehavior = "auto";
   // Could remove animations here if needed
-}
-
-// ============================================
-// MODAL INTERACTION
-// ============================================
-
-function initializeModal() {
-  const modalBtns = document.querySelectorAll('[data-modal-target]');
-  const closeBtns = document.querySelectorAll('.process-modal-close, .process-modal-close-btn');
-
-  modalBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const targetId = btn.getAttribute('data-modal-target');
-      const targetModal = document.getElementById(targetId);
-      if (targetModal) {
-        targetModal.classList.add('is-open');
-        targetModal.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
-      }
-    });
-  });
-
-  const closeModal = () => {
-    document.querySelectorAll('.process-modal-overlay.is-open').forEach(modalOverlay => {
-      modalOverlay.classList.remove('is-open');
-      modalOverlay.setAttribute('aria-hidden', 'true');
-    });
-    document.body.style.overflow = '';
-  };
-
-  closeBtns.forEach(btn => {
-    btn.addEventListener('click', closeModal);
-  });
-
-  // Close on overlay click
-  document.querySelectorAll('.process-modal-overlay').forEach(modalOverlay => {
-    modalOverlay.addEventListener('click', (e) => {
-      if (e.target === modalOverlay) {
-        closeModal();
-      }
-    });
-  });
-
-  // Close on Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      closeModal();
-    }
-  });
 }
