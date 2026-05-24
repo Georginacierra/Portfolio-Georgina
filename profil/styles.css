@@ -299,13 +299,13 @@ body {
 }
 
 .cv-download {
-  background-color: hsl(86 9% 29%) !important;
-  color: white !important;
-  border-color: transparent !important;
+  background-color: hsl(var(--foreground));
+  color: hsl(var(--background));
+  border-color: transparent;
 }
 
 .cv-download:hover {
-  background-color: hsl(86 9% 24%) !important;
+  background-color: hsl(var(--foreground) / 0.9);
   opacity: 0.9;
 }
 
@@ -486,7 +486,7 @@ body {
 
 .accordion-item.active .accordion-title {
   color: hsl(var(--foreground));
-  font-weight: 600;.accordion-content
+  font-weight: 600;
 }
 
 .accordion-item.active .accordion-icon {

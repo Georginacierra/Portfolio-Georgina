@@ -1,0 +1,68 @@
+Can you update the information in the page, adapt content with same style : projects/Fast-retailing/index.html
+
+content : 
+
+class="hero-eyebrow"
+Mission alternance - 2026 - webdesigner
+
+
+class="hero-title" and sidebar-title : Fast Retailling
+
+class = "hero-description" : 
+ Alternance au cœur d'un groupe international de mode. Maquettage, intégration et amélioration UX-UI pour deux marques de mode féminines sur l'e-commerce web et application.
+
+ class="hero-tags" : 
+ - Webdesigner
+ - UI design
+ - Salesforce
+ - Intégration web
+
+ Certains détails restent confidentiels, mais n'hésitez pas à me contacter si vous voulez en savoir plus.b cta : contactez- moi
+
+ cta : contactez moi 
+image 01 : assets/img/fast-retailing/photo01-fast.webp
+
+
+ <!-- 01 — Context -->
+ class="context-main"
+ Alternance  au sein de l'équipe Web Design de Fast Retailing France, en charge des deux marques Comptoir des Cotonniers et Princesse tam.tam. Missions couvrant la conception UX-UI, le maquettage, l'intégration e-commerce et l'amélioration continue des interfaces digitales.
+
+ class="context-sidebar"
+ role : webdesigner 
+ Outils : Figma, Salesfroce, Photoshop, Page designer
+
+  <!-- 02 — Problem & Goals -->
+  <!-- Problems -->
+  Comment concevoir et maintenir des expériences digitales cohérentes pour deux marques à identités distinctes, dans un contexte de fusion bi-brand ?
+   <!-- Goals -->
+  -Concevoir et maintenir des expériences digitales cohérentes pour deux marques, dans un contexte de fusion bi-brand en pleine transformation. 
+  -Améliorer l'expérience d'achat et l'interface UX-UI sur le site web et l'application.
+  -Renforcer le branding de chaque marque tout en facilitant la navigation entre les catégories et les produits.
+
+    <!-- 03 — Process -->
+    ( mettre à jour, 6 steps )
+
+        01 Analyse et cadrage Analyse du brief et du plan d'animation conçu par les équipes e-commerce, marketing et merchandising. Réalisation d'un benchmark pour identifier les tendances du marché (fashion et retail). Analyse des chiffres clés et des résultats d'A/B testing.
+        02 Recherche UX Analyse des comportements utilisateurs via l'A/B testing, identification des points de friction, exploitation des données CRM et des performances de l'année précédente.
+        03 Conception UI Création de wireframes et maquettes sur Figma pour le site web et l'application : homepages, bannières, pop-ins, bandeaux de navigation, pages d'opérations commerciales (Soldes, Ventes privées, Noël, etc.). Création de visuels pour les réseaux sociaux afin de générer du trafic vers le site web.
+        04 Validation & itération Validation des designs et maquettes avec les équipes, boucles de feedback et itérations en environnement de staging.
+        05 Intégration & production Intégration sur Salesforce Commerce Cloud et Page Désigner, avec adaptation responsive desktop/mobile.
+        06 Analyse post-lancement Réunions hebdomadaires d'analyse des résultats et des performances.
+
+   <!-- 04 — Solution -->
+   Créations de visuels alignés avec l’ADN de la marque, pages pour mettre en avant des produits et fait plus claire le chemin de navigation de l’utilisateur et leur expérience. 
+
+
+   image 02 : assets/img/fast-retailing/photo02-fast.webp
+
+
+   imag03 : assets/img/fast-retailing/photo03-fast.webp
+
+   <!-- 05 — Results -->
+   Certains détails restent confidentiels, mais n'hésitez pas à me contacter si vous voulez en savoir plus.b cta : contactez- moi
+
+      -Homepages est livrée en production toutes les deux semaines sur les deux marques. Amélioration de la lisibilité et de la navigation identifiée lors des réunions hebdomadaires.
+      -Opérations commerciales livrées dans les délais sur les deux marques. Création de pages dédiées aux saisons fortes et amélioration de l'orientation utilisateur pendant le parcours d'achat.
+      -Migration du CMS et amélioration de la cohérence visuelle pour faciliter l'intégration des contenus.
+      -Pages éditoriales livrées en production avec un équilibre entre storytelling visuel et efficacité e-commerce.
+
