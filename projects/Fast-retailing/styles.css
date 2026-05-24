@@ -592,8 +592,8 @@ body {
 }
 
 /* ============================================
-   IMAGE PLACEHOLDERS
-   ============================================ */
+IMAGE PLACEHOLDERS
+============================================ */
 
 .image-placeholder {
   border-radius: var(--radius);
@@ -607,7 +607,6 @@ body {
 
 .placeholder-content {
   width: 100%;
-  aspect-ratio: 16 / 10;
   display: flex;
   align-items: center;
   justify-content: center;
