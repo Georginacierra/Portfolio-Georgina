@@ -1,5 +1,8 @@
-I want the same typographie (letter spacing, line high ) and color use in Gustichef :
-projects/Gustichef/index.html , projects/Gustichef/styles.css
+Aide moi à update la section <!-- Skills --> dans profil/index.html
 
-to use it in my landing page style : profil/index.html
-update only the format for the texts en titles
+adjust the margin , padding for :  <!-- Contact me -->
+align with the rest of the index content
+
+also use the icons: 
+assets/img/profil/linkedin-icon.webp for linkedin
+and assets/img/profil/icon-mail.webp for mail icon
