@@ -700,7 +700,7 @@ body {
 }
 
 .experience-cta:hover {
-color: hsl(var(--foreground));
+  color: hsl(var(--foreground));
 }
 
 .cta-arrow {
@@ -750,7 +750,7 @@ color: hsl(var(--foreground));
 @media (min-width: 1024px) {
   .skills-layout {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 4rem;
   }
 }
@@ -990,8 +990,8 @@ color: hsl(var(--foreground));
   justify-content: center;
   align-content: start;
   padding: 1rem;
-  justify-items: center; 
-  align-items: center;  
+  justify-items: center;
+  align-items: center;
 }
 
 @media (min-width: 640px) {
@@ -1167,7 +1167,6 @@ color: hsl(var(--foreground));
   color: rgb(var(--highlight-rgb));
   border-color: rgb(var(--highlight-rgb) / 0.3);
 }
-
 
 @media (min-width: 768px) {
   .contact-button {
