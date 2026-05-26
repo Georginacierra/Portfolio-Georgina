@@ -1901,4 +1901,15 @@ body {
   .video-container.no-aspect {
     min-height: 203px;
   }
+
+  .process-modal {
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+
+  .process-modal-overlay {
+    padding: 0;
+  }
 }
