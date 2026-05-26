@@ -25,6 +25,8 @@
   /* #FEF0D3 */
   --accent-foreground: 86 9% 29%;
   --highlight: 327 78% 47%;
+  /* #D41A7D - Changed to rose #E90083 */
+  --highlight-rgb: 233 0 131;
   /* #D41A7D */
   --highlight-foreground: 41 30% 96%;
   --destructive: 0 60% 45%;
@@ -369,46 +371,58 @@ HERO SECTION
 .flower-wrapper {
   display: none;
   position: absolute;
-  width: clamp(160px, 15vw, 240px);
   z-index: 20;
-  cursor: pointer;
+}
+
+.flower-wrapper.is-active {
+  z-index: 60;
 }
 
 @media (min-width: 1024px) {
   .flower-wrapper {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 300ms ease;
   }
 }
 
-/* Corner positioning for flowers */
+/* Corner positioning & layout direction */
 .flower-tl {
-  top: 8%;
-  left: 3%;
+  top: 12%;
+  left: 4%;
+  flex-direction: row;
 }
 
 .flower-bl {
-  bottom: 10%;
-  left: 3%;
+  bottom: 15%;
+  left: 4%;
+  flex-direction: row;
 }
 
 .flower-tr {
-  top: 8%;
-  right: 3%;
+  top: 12%;
+  right: 4%;
+  flex-direction: row-reverse;
 }
 
 .flower-br {
-  bottom: 10%;
-  right: 3%;
+  bottom: 15%;
+  right: 4%;
+  flex-direction: row-reverse;
 }
 
 .flower-image-wrapper {
   position: relative;
+  width: clamp(140px, 12vw, 200px);
   transition: transform 300ms ease-in-out;
   transform-origin: center;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .flower-wrapper:hover .flower-image-wrapper {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 /* Rotation per corner */
@@ -428,26 +442,6 @@ HERO SECTION
   transform: rotate(15deg);
 }
 
-.flower-wrapper:hover .flower-image-wrapper {
-  transform: rotate(var(--rotation)) scale(1.05);
-}
-
-.flower-tl:hover .flower-image-wrapper {
-  --rotation: 15deg;
-}
-
-.flower-bl:hover .flower-image-wrapper {
-  --rotation: -15deg;
-}
-
-.flower-tr:hover .flower-image-wrapper {
-  --rotation: -15deg;
-}
-
-.flower-br:hover .flower-image-wrapper {
-  --rotation: 15deg;
-}
-
 .flower-image {
   width: 100%;
   height: auto;
@@ -459,7 +453,7 @@ HERO SECTION
 
 .flower-label {
   position: absolute;
-  font-size: 0.6875rem;
+  font-size: 0.625rem;
   text-transform: uppercase;
   letter-spacing: 0.22em;
   font-weight: 600;
@@ -468,42 +462,95 @@ HERO SECTION
 
 .flower-tl .flower-label,
 .flower-bl .flower-label {
-  bottom: 0.25rem;
-  right: 0.25rem;
+  bottom: -0.5rem;
+  right: 0;
 }
 
 .flower-tr .flower-label,
 .flower-br .flower-label {
-  bottom: 0.25rem;
-  left: 0.25rem;
+  bottom: -0.5rem;
+  left: 0;
 }
 
-.flower-bl .flower-label {
-  bottom: auto;
-  top: 0.25rem;
+/* Flower info (Title & CTA) */
+.flower-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 300ms ease;
 }
 
-.flower-br .flower-label {
-  bottom: auto;
-  top: 0.25rem;
+.flower-tl .flower-info,
+.flower-bl .flower-info {
+  text-align: left;
+  align-items: flex-start;
 }
 
-/* Flower card positioning */
+.flower-tr .flower-info,
+.flower-br .flower-info {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.flower-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: hsl(var(--foreground) / 0.8);
+  margin: 0;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+@media (min-width: 1280px) {
+  .flower-title {
+    font-size: 1rem;
+  }
+}
+
+.flower-cta {
+  padding: 0.2rem 0;
+  font-size: 0.5875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 600;
+  color: rgb(var(--highlight-rgb));
+  transition: color 200ms;
+  cursor: pointer;
+}
+
+.flower-cta:hover {
+  color: hsl(var(--foreground));
+}
+
+/* Modal Overlay (Transparent for click-away) */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: transparent;
+  z-index: 45;
+  display: none;
+  pointer-events: none;
+}
+
+.modal-overlay.is-active {
+  display: block;
+  pointer-events: auto;
+}
+
+/* Flower card positioning (Restored to absolute next to flower) */
 .flower-card {
   position: absolute;
   width: 18rem;
-  opacity: 0;
-  transform: translateY(0.5rem);
-  pointer-events: none;
+  display: none;
   transition:
     opacity 300ms ease,
-    transform 300ms ease;
-  z-index: 30;
+    transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 50;
   border-radius: var(--radius);
   background-color: hsl(var(--card));
   border: 1px solid hsl(var(--border));
   box-shadow: var(--shadow-card);
-  padding: 1.25rem;
+  padding: 1.5rem;
 }
 
 @media (min-width: 1280px) {
@@ -512,57 +559,49 @@ HERO SECTION
   }
 }
 
-.flower-wrapper:hover .flower-card {
-  opacity: 1;
-  transform: translateY(0);
+.flower-card.is-active {
+  display: block;
   pointer-events: auto;
 }
 
-/* Card positioning per corner */
+/* Position cards relative to the flower-wrapper */
 .flower-tl .flower-card,
 .flower-bl .flower-card {
   left: 100%;
   top: 50%;
-  transform: translateY(-50%) translateY(0.5rem);
-  margin-left: 1rem;
+  transform: translateY(-50%) translateX(-1rem);
+  margin-left: 2rem;
 }
 
-.flower-wrapper:hover.flower-tl .flower-card,
-.flower-wrapper:hover.flower-bl .flower-card {
-  transform: translateY(-50%) translateY(0);
+.flower-tl .flower-card.is-active,
+.flower-bl .flower-card.is-active {
+  transform: translateY(-50%) translateX(0);
 }
 
 .flower-tr .flower-card,
 .flower-br .flower-card {
   right: 100%;
   top: 50%;
-  transform: translateY(-50%) translateY(0.5rem);
-  margin-right: 1rem;
+  transform: translateY(-50%) translateX(1rem);
+  margin-right: 2rem;
 }
 
-.flower-wrapper:hover.flower-tr .flower-card,
-.flower-wrapper:hover.flower-br .flower-card {
-  transform: translateY(-50%) translateY(0);
+.flower-tr .flower-card.is-active,
+.flower-br .flower-card.is-active {
+  transform: translateY(-50%) translateX(0);
 }
 
-.flower-bl .flower-card {
-  top: auto;
-  bottom: 50%;
-  transform: translateY(50%) translateY(0.5rem);
-}
-
-.flower-wrapper:hover.flower-bl .flower-card {
-  transform: translateY(50%) translateY(0);
-}
-
+/* Adjust vertical offset for bottom corners to avoid footer/overlap if needed */
+.flower-bl .flower-card,
 .flower-br .flower-card {
   top: auto;
-  bottom: 50%;
-  transform: translateY(50%) translateY(0.5rem);
+  bottom: 0;
+  transform: translateY(1rem);
 }
 
-.flower-wrapper:hover.flower-br .flower-card {
-  transform: translateY(50%) translateY(0);
+.flower-bl .flower-card.is-active,
+.flower-br .flower-card.is-active {
+  transform: translateY(0);
 }
 
 /* ============================================

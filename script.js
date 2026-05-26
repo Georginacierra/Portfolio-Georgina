@@ -48,52 +48,63 @@ function ensureHeroVisibility() {
 // ============================================
 
 function initializeFlowerInteractions() {
-  const flowers = document.querySelectorAll(".flower-wrapper");
+  const ctaButtons = document.querySelectorAll(".flower-cta");
+  const flowerImages = document.querySelectorAll(".flower-image-wrapper");
+  const overlay = document.getElementById("modal-overlay");
+  const closeButtons = document.querySelectorAll(".card-close");
 
-  flowers.forEach((flower) => {
-    const flowerID = flower.getAttribute("data-flower-id");
-    const closeButton = flower.querySelector(".card-close");
-
-    // Hover enter
-    flower.addEventListener("mouseenter", () => {
+  // Open modal on CTA click
+  ctaButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const flowerID = btn.getAttribute("data-flower-id");
       openCard(flowerID);
     });
+  });
 
-    // Hover leave
-    flower.addEventListener("mouseleave", () => {
-      if (currentOpenCard === flowerID) {
-        closeCard();
-      }
+  // Open modal on Flower image click
+  flowerImages.forEach((img) => {
+    img.addEventListener("click", (e) => {
+      e.preventDefault();
+      const flowerWrapper = img.closest(".flower-wrapper");
+      const flowerID = flowerWrapper.getAttribute("data-flower-id");
+      openCard(flowerID);
     });
+  });
 
-    // Close button click
-    if (closeButton) {
-      closeButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        closeCard();
-      });
-    }
+  // Close modal on overlay click
+  if (overlay) {
+    overlay.addEventListener("click", () => {
+      closeCard();
+    });
+  }
+
+  // Close modal on close button click
+  closeButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      closeCard();
+    });
   });
 }
 
 function openCard(flowerID) {
   // Close any previously opened card
-  if (currentOpenCard && currentOpenCard !== flowerID) {
-    const prevCard = document.querySelector(
-      `.flower-wrapper[data-flower-id="${currentOpenCard}"] .flower-card`,
-    );
-    if (prevCard) {
-      prevCard.classList.remove("visible");
-    }
-  }
+  closeCard();
 
   // Open the new card
-  const card = document.querySelector(
-    `.flower-wrapper[data-flower-id="${flowerID}"] .flower-card`,
-  );
+  const card = document.getElementById(`card-${flowerID}`);
+  const overlay = document.getElementById("modal-overlay");
+  const wrapper = card ? card.closest(".flower-wrapper") : null;
+
   if (card) {
-    card.classList.add("visible");
+    card.classList.add("is-active");
+  }
+  if (overlay) {
+    overlay.classList.add("is-active");
+  }
+  if (wrapper) {
+    wrapper.classList.add("is-active");
   }
 
   currentOpenCard = flowerID;
@@ -101,15 +112,25 @@ function openCard(flowerID) {
 
 function closeCard() {
   if (currentOpenCard) {
-    const card = document.querySelector(
-      `.flower-wrapper[data-flower-id="${currentOpenCard}"] .flower-card`,
-    );
+    const card = document.getElementById(`card-${currentOpenCard}`);
+    const overlay = document.getElementById("modal-overlay");
+    const wrapper = card ? card.closest(".flower-wrapper") : null;
+
     if (card) {
-      card.classList.remove("visible");
+      card.classList.remove("is-active");
+    }
+    if (overlay) {
+      overlay.classList.remove("is-active");
+    }
+    if (wrapper) {
+      wrapper.classList.remove("is-active");
     }
     currentOpenCard = null;
   }
 }
+
+
+
 
 // ============================================
 // NAVIGATION ACTIVE STATE
